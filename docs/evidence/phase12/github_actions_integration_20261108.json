@@ -103,7 +103,7 @@
     "ruff_format_passed": true,
     "ruff_lint_passed": true,
     "strict_mypy_passed": true,
-    "pytest_passed": 241,
+    "pytest_passed": 242,
     "pytest_failed": 0,
     "pytest_skipped": 0,
     "pytest_xfailed": 0
