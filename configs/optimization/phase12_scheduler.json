@@ -46,6 +46,11 @@
   "github_cli": "outputs/runs/github_cli/bin/gh.exe",
   "github_slots": 1,
   "github_chunk_epochs": 40,
+  "github_allowed_seeds": [
+    "case1_filtered:17",
+    "case1_no_filter:21",
+    "case2:17"
+  ],
   "poll_seconds": 300,
   "snapshot_seconds": 1800,
   "evaluation_requests_per_seed": 20000,

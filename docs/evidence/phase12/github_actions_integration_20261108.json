@@ -73,12 +73,29 @@
     "lease_persisted_before_dispatch": true,
     "only_fresh_unclaimed_seeds_eligible": true,
     "maximum_parallel_github_seeds": 1,
+    "bounded_seed_allowlist": [
+      "case1_filtered:17",
+      "case1_no_filter:21",
+      "case2:17"
+    ],
     "per_seed_concurrency_group": true,
     "cancel_in_progress": false,
     "each_chunk_validated_before_continuation": true,
     "terminal_result_requires_exact_20000_requests": true,
     "independent_champion_reevaluation_required": true,
     "transient_api_failure_releases_lease": false
+  },
+  "production_assignment": {
+    "campaign": "case1_filtered",
+    "seed": 17,
+    "lease_token": "case1_filtered-17-89af33c4eec9",
+    "first_chunk_target_epochs": 40,
+    "first_chunk_target_requests": 4000,
+    "workflow_run_id": 42460738312,
+    "workflow_url": "https://github.com/dariushmmz/Steel-Frame-Optimization/actions/runs/42460738312",
+    "state_at_capture": "in_progress",
+    "duplicate_owner_detected": false,
+    "kaggle_workers_interrupted": 0
   },
   "local_verification": {
     "python_version": "3.12.6",

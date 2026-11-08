@@ -194,7 +194,9 @@ def choose_next_seed(
 
 
 def choose_github_seed(
-    records: dict[str, dict[str, Any]], source_requests: dict[str, int]
+    records: dict[str, dict[str, Any]],
+    source_requests: dict[str, int],
+    allowed_tokens: set[str] | None = None,
 ) -> SeedKey | None:
     """Choose one unclaimed seed that can safely start without a private checkpoint."""
 
@@ -202,6 +204,10 @@ def choose_github_seed(
         SeedKey(cast(Campaign, record["campaign"]), int(record["seed"]))
         for record in records.values()
         if record["state"] == "pending"
+        and (
+            allowed_tokens is None
+            or record["campaign"] + f":{int(record['seed']):02d}" in allowed_tokens
+        )
         and source_requests.get(f"{record['campaign']}:{int(record['seed']):02d}", 0) == 0
     ]
     if not candidates:
@@ -1157,7 +1163,8 @@ class Phase12Scheduler:
         )
         if bool(self.config.get("github_enabled", False)):
             while github_active < int(self.config.get("github_slots", 0)):
-                key = choose_github_seed(self.records, self.source_requests)
+                allowed = {str(token) for token in self.config["github_allowed_seeds"]}
+                key = choose_github_seed(self.records, self.source_requests, allowed)
                 if key is None:
                     break
                 self._launch_github(key)

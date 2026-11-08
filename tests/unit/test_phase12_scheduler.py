@@ -84,9 +84,27 @@ def test_github_selects_only_fresh_unclaimed_seed() -> None:
     selected = choose_github_seed(
         records,
         {"case1_filtered:08": 0, "case1_no_filter:11": 13_700, "case2:13": 0},
+        {"case1_filtered:08", "case1_no_filter:11"},
     )
 
     assert selected == SeedKey("case1_filtered", 8)
+
+
+def test_github_never_dispatches_outside_bounded_allowlist() -> None:
+    """Keep the public runner supplementary rather than turning it into a full backend."""
+
+    records: dict[str, dict[str, Any]] = {
+        "case1_filtered:18": {
+            "campaign": "case1_filtered",
+            "seed": 18,
+            "state": "pending",
+        },
+        "case2:17": {"campaign": "case2", "seed": 17, "state": "pending"},
+    }
+
+    selected = choose_github_seed(records, {}, {"case2:17"})
+
+    assert selected == SeedKey("case2", 17)
 
 
 def test_github_chunk_validation_rejects_wrong_assignment(
