@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-08T10:24:00+03:30",
+  "status": "blocked_before_repository_creation_or_workflow_execution",
+  "authentication": {
+    "account": "dariushmmz",
+    "stored_credential_verified_by_authenticated_api": true,
+    "oauth_scopes": [
+      "gist",
+      "repo",
+      "workflow"
+    ],
+    "windows_gh_cli_installed": false,
+    "wsl_gh_cli_installed": false,
+    "secret_exposed_in_logs": false
+  },
+  "repository": {
+    "workspace_remote_configured": false,
+    "accessible_repositories_checked": 22,
+    "matching_project_repository_found": false,
+    "repository_created": false,
+    "source_uploaded": false
+  },
+  "billing": {
+    "plan_verified": false,
+    "payment_method_verified": false,
+    "spending_limit_verified": false,
+    "user_billing_usage_summary_http_status": 404,
+    "user_billing_usage_http_status": 404,
+    "legacy_actions_billing_http_status": 404,
+    "estimated_private_runner_hours_for_32_remaining_seeds": 152.17,
+    "estimated_private_linux_compute_usd_before_included_usage": 54.78,
+    "estimate_excludes": [
+      "two-core slowdown",
+      "timeout recovery",
+      "artifact storage",
+      "failed or repeated jobs"
+    ]
+  },
+  "official_limits": {
+    "private_standard_linux_cpu": 2,
+    "private_standard_linux_ram_gb": 8,
+    "private_standard_linux_ssd_gb": 14,
+    "public_standard_linux_cpu": 4,
+    "public_standard_linux_ram_gb": 16,
+    "hosted_job_timeout_hours": 6,
+    "free_plan_standard_job_concurrency": 20,
+    "free_plan_artifact_storage_mb": 500,
+    "free_plan_included_compute_usd_monthly": 12,
+    "private_linux_rate_usd_per_minute": 0.006,
+    "sources": [
+      "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+      "https://docs.github.com/en/actions/reference/limits",
+      "https://docs.github.com/en/billing/concepts/product-billing/github-actions",
+      "https://docs.github.com/en/billing/reference/actions-runner-pricing"
+    ]
+  },
+  "policy": {
+    "source": "https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features",
+    "finding": "GitHub-hosted Actions may only be used to develop and test applications, must relate to production, testing, deployment, or publication of the repository software, and must not impose burden disproportionate to user benefit.",
+    "production_campaign_permission_confirmed": false
+  },
+  "runtime_risk": {
+    "completed_seed_sample_size": 22,
+    "observed_mean_hours": 4.755,
+    "observed_median_hours": 4.76,
+    "observed_minimum_hours": 1.185,
+    "observed_maximum_hours": 8.674,
+    "observed_seeds_over_six_hours": 5,
+    "one_job_per_seed_safe": false,
+    "required_if_unblocked": "Chunk every seed below six hours and persist validated checkpoints between jobs."
+  },
+  "current_execution": {
+    "completed_seeds": 55,
+    "running_kaggle_seeds": [
+      "case1_filtered/seed_12",
+      "case1_no_filter/seed_19",
+      "case2/seed_16"
+    ],
+    "blocked_colab_seed": "case1_filtered/seed_10",
+    "pending_seeds": 31,
+    "failed_seeds": 0,
+    "committed_request_lower_bound": 1112400,
+    "total_requests": 1800000
+  },
+  "actions_taken": [
+    "Authenticated read-only GitHub API audit",
+    "Repository permission inventory",
+    "Read-only billing endpoint probes",
+    "Official policy, runner, limit, storage, and pricing review",
+    "Read-only Kaggle and Colab reconciliation"
+  ],
+  "actions_not_taken": [
+    "Repository creation",
+    "Source or checkpoint upload",
+    "Workflow creation or dispatch",
+    "Actions minute or artifact consumption",
+    "Scheduler backend modification"
+  ]
+}

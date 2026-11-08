@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "milestone": "M7",
+  "platform": "win32",
+  "python": "3.12.6",
+  "uv": "0.6.14",
+  "validation_layer": 1,
+  "pytest": {
+    "collected": 83,
+    "passed": 83,
+    "failed": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "seconds": 6.46
+  },
+  "documentation_tests": {
+    "collected": 6,
+    "passed": 6
+  },
+  "quality": {
+    "ruff_lint": "pass",
+    "ruff_format": "38 files formatted; pass",
+    "mypy_strict": "success; 37 source files"
+  },
+  "network": "no network used during M7",
+  "structural_evaluations": 0,
+  "open_phase_1_decisions": [
+    "DEC-011",
+    "DEC-012",
+    "DEC-020"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "backend": "modal-cpu-v1",
+  "billing_observed_usd_before_campaign": 0.00145921,
+  "billing_note": "Recent seed-0 reuse app charges had not appeared at query time; final billing is recorded after campaign completion.",
+  "campaign_sha256": "aa2f2f23e33bd8579b3c80f33584597e3a39cbecf3c712c3dba8ba17cf2e1ab8",
+  "checkpoint_audit": {
+    "completed_seeds": [0, 1, 2, 3, 4, 5, 6, 7],
+    "incomplete_seed": 8,
+    "incomplete_seed_completed_epochs": 41,
+    "incomplete_seed_evaluation_requests": 2050,
+    "remote_checkpoint_count": 9,
+    "remote_total_bytes": 212331808,
+    "all_campaign_identities_equal": true,
+    "all_evaluator_identities_equal": true,
+    "all_remote_hashes_equal_local": true
+  },
+  "checkpoint_audit_app_id": "ap-bFw3RBh2qTxaLGuBylaC1B",
+  "checkpoint_recovery": {
+    "app_id": "ap-rzAW5stvsZPT9wCOOEe7YE",
+    "seeds": [0, 8],
+    "population_equal": true,
+    "rng_state_equal": true,
+    "cache_size_equal": true,
+    "history_equal": true,
+    "structural_evaluations_executed": 0
+  },
+  "completed_seed_reuse": {
+    "seed": 0,
+    "first_remote_result_app_id": "ap-yClza4rmoJjVU5wJa4YNEM",
+    "reuse_app_id": "ap-Dv7emQ2XiaE2U1mysEAzbi",
+    "checkpoint_sha256": "f4daff19852b68821d631c2bf286fed135b4b109f02f10ea821469b3dcfcf7b0",
+    "result_sha256": "c93753b712b63e2d4cac911cd578393c3a5023f69d36d9755bc3aead099c8150",
+    "evaluation_requests": 10000,
+    "structural_executions": 7027,
+    "cache_hits": 2973,
+    "champion_reevaluation_equal": true,
+    "second_call_reused_completed_result": true
+  },
+  "corrected_audit_failure": {
+    "app_id": "ap-4x3XeFA8pagBeK6khFjR87",
+    "error": "FileNotFoundError: /configs/optimization/phase9_modal_backend.json",
+    "cause": "remote module path was treated as the local checkout root",
+    "checkpoint_files_read_or_changed": false,
+    "fix": "load policy from local checkout when present, otherwise /project",
+    "fixed_audit_passed": true
+  },
+  "cost_projection": {
+    "cpu_usd_per_core_second": 0.0000131,
+    "memory_usd_per_gib_second": 0.00000222,
+    "maximum_configured_usd": 10.0,
+    "conservative_remaining_requests": 217950,
+    "projected_remaining_seed_container_seconds": 66859.69037739545,
+    "projected_compute_usd": 3.65187628841334,
+    "absolute_30_seed_timeout_compute_usd": 5.89896,
+    "projected_storage_gib_from_observed_checkpoints": 0.6591646869977316,
+    "projected_storage_usd_per_month": 0.059324821829795836
+  },
+  "gpu": {
+    "benchmark_run": false,
+    "reason": "OpenSeesPy 3.8.0.0 has no supported CUDA structural-solver backend for this model"
+  },
+  "image": {
+    "python": "3.12.6",
+    "runtime_versions_from_uv_lock": true,
+    "reported_package_payload_download_mib": 123.2,
+    "base_image_and_metadata_size_reported": false
+  },
+  "linux_probe": {
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+    "relative_tolerance": 1e-8,
+    "absolute_tolerance": 1e-12,
+    "evaluator_identity_equal": true,
+    "all_results_equal_within_tolerance": true,
+    "maximum_relative_difference": 0.0,
+    "raw_volume_sha256": "36cfcb6411411a314dcdc8024df42604063af7f0cd2d81338079bfa2dd4532f0"
+  },
+  "pilot": {
+    "elapsed_seconds": 6.748856106,
+    "evaluation_requests": 32,
+    "structural_executions": 22,
+    "cache_hits": 10,
+    "champion_status": "feasible",
+    "champion_cache_key": "cc05886cfc72a3e4eada14a1c4612071725a0aa0b255d76ad6aeab032a73db94",
+    "champion_objective": 0.08947963741247544,
+    "champion_reevaluation_equal": true
+  },
+  "proxy_used": false,
+  "schema_version": "1.0"
+}

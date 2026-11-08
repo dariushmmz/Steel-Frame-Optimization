@@ -1,0 +1,17 @@
+{
+  "id": "dariushmzx/steel-frame-phase-12-persistence",
+  "title": "Steel Frame Phase 12 Persistence",
+  "code_file": "verify_persistence.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "dariushmzx/steel-frame-phase12-checkpoint-sample"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "dariushmzx/steel-frame-phase-12-compatibility"
+  ]
+}

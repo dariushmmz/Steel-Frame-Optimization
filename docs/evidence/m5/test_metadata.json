@@ -1,0 +1,23 @@
+{
+  "milestone": "Phase 1 / M5 clean-restart rerun",
+  "date": "2026-10-27",
+  "validation_layer": "automated software tests (layer 1)",
+  "results": {
+    "tests_collected": 70,
+    "tests_passed": 70,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "tests_xfailed": 0,
+    "pytest_seconds": 2.75,
+    "required_schemas": 6,
+    "valid_fixtures": 6,
+    "invalid_fixtures": 6,
+    "ruff_lint": "pass",
+    "ruff_format": "pass",
+    "mypy_strict": "pass",
+    "mypy_source_files": 34
+  },
+  "network": "no network used during M5",
+  "structural_evaluations": 0
+}
+

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "stage1-lrfd-research-baseline-v1",
+  "domain_approval": "owner-approved 273-section AISC v14.1 implementation baseline",
+  "strength_gravity": {"dead": 1.2, "live": 1.6, "seismic": 0.0},
+  "strength_seismic": {"dead": 1.2, "live": 1.0, "seismic": 1.0},
+  "service_dead": {"dead": 1.0, "live": 0.0, "seismic": 0.0},
+  "service_live": {"dead": 0.0, "live": 1.0, "seismic": 0.0},
+  "service_dead_plus_live": {"dead": 1.0, "live": 1.0, "seismic": 0.0},
+  "compression_resistance_factor": 0.9,
+  "flexural_resistance_factor": 0.9,
+  "beam_fully_braced": true,
+  "column_unbraced_length": "story_centerline_length",
+  "column_buckling_axis": "major_rx",
+  "deflection_denominators": {"service_D": 120.0, "service_L": 360.0, "service_D_plus_L": 240.0},
+  "elastic_story_drift_limit": 0.025,
+  "elastic_roof_drift_limit": 0.025,
+  "equilibrium_relative_tolerance": 1e-8,
+  "assumption_ids": ["ASM-004", "ASM-005", "ASM-006", "ASM-007", "ASM-008", "ASM-009", "ASM-011", "ASM-027", "ASM-029"],
+  "status": "owner-authorized research implementation, pending independent engineering review"
+}

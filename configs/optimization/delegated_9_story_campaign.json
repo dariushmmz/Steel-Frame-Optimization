@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "delegated_9_story_all_published_cases",
+  "case_ids": [
+    "9_story_case_1",
+    "9_story_case_2_principal"
+  ],
+  "seed_manifest_path": "configs/optimization/seed_manifest.json",
+  "status": "agent_decided_pending_ratification_DEC-011_DEC-012",
+  "population_size": 100,
+  "generations": 200,
+  "structural_evaluation_budget": 20000
+}

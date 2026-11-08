@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "record_id": "phase12-modal-memory-recovery-v1",
+  "date": "2026-11-04",
+  "failure_class": "container_memory_limit_exit_137",
+  "failed_app_evidence": [
+    {
+      "app_id": "ap-3FeCOxlnR9Y5wqPTIH2Snd",
+      "campaign": "case1_filtered",
+      "exit_137_event_count": 1,
+      "completed_result_count_before_stop": 3,
+      "stopped_at": "2026-11-04 15:15:43+03:30"
+    },
+    {
+      "app_id": "ap-bYcdWR3vFpCCvYGpS9oETZ",
+      "campaign": "case1_no_filter",
+      "exit_137_event_count": 2,
+      "completed_result_count_before_stop": 1,
+      "stopped_at": "2026-11-04 15:15:47+03:30"
+    },
+    {
+      "app_id": "ap-rYoLlXhCPWH2QrN3nRqNvD",
+      "campaign": "case2",
+      "exit_137_event_count": 4,
+      "completed_result_count_before_stop": 1,
+      "stopped_at": "2026-11-04 15:15:44+03:30"
+    }
+  ],
+  "old_resources": {
+    "cpu_cores": 4.0,
+    "requested_memory_mib": 1536,
+    "memory_limit_mib": 3072,
+    "parallel_seed_containers_per_app": 4
+  },
+  "recovery_resources": {
+    "cpu_cores": 4.0,
+    "requested_memory_mib": 4096,
+    "memory_limit_mib": 8192,
+    "parallel_seed_containers_per_app": 4
+  },
+  "cost_controls": {
+    "contingent_three_campaign_projection_usd": 70.45386286544555,
+    "timeout_bound_thirty_seed_submission_usd": 39.70944,
+    "per_submission_hard_cap_usd": 40.0,
+    "aggregate_hard_cap_usd": 100.0
+  },
+  "identity_probe": {
+    "backend_sha256": "bdd4ee01da63b46e9a296d4dfd78abcb4e2b8c957965a32289e036c5111ab5f4",
+    "campaign_sha256": "fc697f27fd62e822030de6a28b1a8455e723ea5fea92a4893ed388d917ba1db8",
+    "implementation_sha256": "71d3b04bbb67899d7417c537022c120a70e901f955155dc9712f3529528746cc"
+  },
+  "unchanged_contract": {
+    "automatic_retries": 0,
+    "checkpoint_interval_epochs": 1,
+    "evaluation_requests_per_seed": 20000,
+    "population_size": 100,
+    "seed_count_per_campaign": 30,
+    "worker_processes_per_seed": 4
+  },
+  "disposition": "degraded apps stopped after canonical checkpoints; recover incomplete seeds with unchanged campaign and evaluator identities"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "validated_date": "2026-11-06",
+  "kernel": "dariushmzx/steel-frame-phase-12-case1-no-filter-seed-06/1",
+  "campaign": "case1_no_filter",
+  "seed": 6,
+  "source_checkpoint": {
+    "completed_epochs": 191,
+    "evaluation_requests": 19100,
+    "sha256": "a23d2187f81b9722eee30e6c0f9545ea657efb35ba87e3a47ceb6c281f491e9b"
+  },
+  "final_checkpoint": {
+    "completed_epochs": 200,
+    "evaluation_requests": 20000,
+    "structural_executions": 19406,
+    "cache_hits": 594,
+    "cached_results": 19406,
+    "sha256": "be8e3259784500df5b37d5f3d26fb67907ec44a505f0b8471690db135c70b18a"
+  },
+  "result_sha256": "a6e793026cffb3183561820f4d5a734c7c331fbc39fdf2ca36ac5b713e17befb",
+  "resumed_epoch_count": 9,
+  "first_persisted_progress": "epoch=192 requests=19200 executions=18629 hits=571",
+  "last_persisted_progress": "epoch=200 requests=20000 executions=19406 hits=594",
+  "elapsed_seconds": 1283.481860341,
+  "measured_requests_per_second": 0.701217545654198,
+  "checks": {
+    "campaign_identity_equal": true,
+    "evaluator_identity_equal": true,
+    "pcg64_rng_state_restored": true,
+    "population_restored": true,
+    "cache_restored": true,
+    "history_restored": true,
+    "exact_request_accounting": true,
+    "result_matches_checkpoint": true,
+    "champion_is_checkpoint_minimum": true,
+    "independent_champion_reevaluation_equal": true,
+    "recovery_input_hash_equal": true,
+    "persisted_artifact_hashes_equal": true
+  },
+  "gate_passed": true
+}

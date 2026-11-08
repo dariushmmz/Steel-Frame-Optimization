@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "gravity_dead_factor": 1.1,
+  "gravity_live_factor": 1.1,
+  "constraint_handler": "Penalty",
+  "constraint_penalty_factor": 1e16,
+  "lateral_distribution_exponent": 2.0,
+  "targets": [
+    {"target_id": "OP", "performance_level": "OP", "roof_displacement_ratio": 0.004, "drift_limit_ratio": 0.0065, "rotation_check": false, "primary_acceptance": true},
+    {"target_id": "IO", "performance_level": "IO", "roof_displacement_ratio": 0.007, "drift_limit_ratio": 0.012, "rotation_check": true, "primary_acceptance": true},
+    {"target_id": "LS_PAPER_SENSITIVITY", "performance_level": "LS", "roof_displacement_ratio": 0.02, "drift_limit_ratio": 0.031, "rotation_check": true, "primary_acceptance": false},
+    {"target_id": "LS_PRIMARY", "performance_level": "LS", "roof_displacement_ratio": 0.025, "drift_limit_ratio": 0.031, "rotation_check": true, "primary_acceptance": true},
+    {"target_id": "CP", "performance_level": "CP", "roof_displacement_ratio": 0.05, "drift_limit_ratio": 0.061, "rotation_check": true, "primary_acceptance": true}
+  ],
+  "baseline_roof_increment_ratio": 0.00025,
+  "refinement_roof_increment_ratios": [0.001, 0.0005, 0.00025],
+  "target_landing_absolute_tolerance_m": 1e-10,
+  "constraint_translation_absolute_tolerance_m": 1e-8,
+  "equilibrium_relative_tolerance": 1e-8,
+  "hinge_force_relative_tolerance": 1e-8,
+  "refinement_relative_tolerance": 0.02,
+  "repeat_relative_tolerance": 1e-12,
+  "hierarchy_required_ratio": 1.0,
+  "hierarchy_joint_scope": "levels_with_column_above_and_below_excluding_roof",
+  "column_axial_force_source": "preliminary_CP_member_local_end_1_compression",
+  "paper_comparison_ls_target_id": "LS_PAPER_SENSITIVITY",
+  "assumption_ids": ["ASM-012", "ASM-013", "ASM-014", "ASM-015", "ASM-030", "ASM-031", "ASM-032", "ASM-033", "ASM-034"]
+}

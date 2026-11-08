@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "exact_identity": {
+    "scope": "hashes, identifiers, counts, canonical JSON bytes, and schema enums",
+    "absolute_tolerance": 0.0,
+    "relative_tolerance": 0.0
+  },
+  "unit_conversion_round_trip": {
+    "scope": "Phase 1 scalar conversion round trips only",
+    "absolute_tolerance": 1e-15,
+    "relative_tolerance": 1e-12
+  },
+  "numerical_analysis": {
+    "status": "awaiting_phase_specific_convergence_evidence_and_approval",
+    "absolute_tolerance": null,
+    "relative_tolerance": null
+  },
+  "research_comparison": {
+    "status": "agent_decided_pending_ratification_DEC-020",
+    "source_transcription": "exact identifiers and counts; numeric text must remain inside the displayed rounding interval",
+    "deterministic_response_relative_tolerance": 0.02,
+    "pushover_curve_relative_tolerance": 0.05,
+    "published_objective_relative_tolerance": 0.05,
+    "published_weight_relative_tolerance": 0.02,
+    "published_uniformity_relative_tolerance": 0.1,
+    "stochastic_median_objective_relative_tolerance": 0.1,
+    "stochastic_best_objective_relative_tolerance": 0.05,
+    "required_independent_runs": 30,
+    "policy": "register each metric before execution; never loosen after observing a result"
+  },
+  "engineering_acceptance": {
+    "status": "requires_qualified_structural_engineer",
+    "absolute_tolerance": null,
+    "relative_tolerance": null
+  }
+}
+

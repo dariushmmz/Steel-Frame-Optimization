@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-05T01:52:56+03:30",
+  "git_commit": "6f275df84239f700192554a21065ad38855e91a8",
+  "production_workloads_submitted": false,
+  "project_or_checkpoint_files_uploaded": false,
+  "kaggle": {
+    "cli_version": "2.2.4",
+    "authentication_verified": true,
+    "private_kernel_id": "dariushmzx/steel-frame-phase-12-access-probe",
+    "private_kernel_version": 2,
+    "execution_status": "complete",
+    "output_retrieval_verified": true,
+    "cpu_count": 4,
+    "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+    "default_python": "3.13.18",
+    "available_python_3_12": "3.12.3",
+    "required_python_3_12_6_available": false,
+    "quota_or_concurrent_slot_count_verified": false
+  },
+  "colab": {
+    "cli": "official google-colab-cli under WSL",
+    "cli_version": "0.7.5",
+    "oauth_authentication_verified": true,
+    "cpu_session_creation_verified": true,
+    "remote_execution_verified": true,
+    "cpu_count": 2,
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "default_python": "3.13.18",
+    "available_python_3_12": "3.12.3",
+    "required_python_3_12_6_available": false,
+    "compute_unit_balance": 0.0,
+    "drive_mount_verified": false,
+    "drive_mount_blocker": "interactive Google Drive consent is still required",
+    "active_sessions_after_probe": 0
+  },
+  "modal_inventory": {
+    "volume": "steel-frame-phase12-v1",
+    "partial_seed_checkpoint_count": 20,
+    "partial_seed_checkpoint_reported_size_mib": 1155.2,
+    "all_canonical_started_seed_checkpoint_count": 51,
+    "all_canonical_started_seed_checkpoint_reported_size_mib": 4993.1,
+    "completed_result_count": 31,
+    "completed_result_reported_size_mib": 20.7,
+    "interrupted_temporary_file_excluded": "case2/checkpoints/seed_22.json.tmp",
+    "minimum_cloud_recovery_upload": "20 canonical partial-seed checkpoints plus immutable project inputs; completed seeds must not be uploaded or rerun",
+    "immutable_project_input_file_count": 150,
+    "immutable_project_input_size_mib": 2.7
+  },
+  "checkpoint_portability_sample": {
+    "campaign": "case1_no_filter",
+    "seed": 18,
+    "path": "outputs/runs/phase12_platform_migration/case1_no_filter/checkpoints/seed_18.json",
+    "bytes": 13763866,
+    "sha256": "837a933fce479666497aec02272718adf6d3d6c82f5940ffcde4b967402bbc05",
+    "completed_epochs": 26,
+    "evaluation_requests": 2600,
+    "structural_executions": 2532,
+    "cache_hits": 68,
+    "campaign_identity_equal": true,
+    "evaluator_identity_equal": true,
+    "population_equal": true,
+    "pcg64_rng_state_equal": true,
+    "cache_equal": true,
+    "history_equal": true,
+    "remote_numerical_resume_verified": false
+  },
+  "migration_gate": {
+    "passed": false,
+    "blocking_reasons": [
+      "Neither verified cloud runtime contains the frozen Python 3.12.6 interpreter.",
+      "The standing network policy does not authorize downloading an interpreter with uv python install or an equivalent installer.",
+      "Google Drive durable checkpoint persistence is not available until the account completes the interactive Drive-consent step.",
+      "No remote checkpoint-resume numerical identity test can be accepted before the frozen interpreter and dependencies are present."
+    ],
+    "required_actions": [
+      "Explicitly authorize downloading and installing Python 3.12.6 in the Kaggle and/or Colab runtime, or record an owner-approved ADR relaxing the exact patch pin.",
+      "Complete the one-time Google Drive consent flow if Colab is to carry production checkpoints."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "compatibility_id": "phase12-nine-story-nonlinear-and-ga-v1",
+  "change_scope": "nine_story_evaluator_profiles_and_phase12_validation",
+  "structural_calculation_code_changed": true,
+  "three_story_configuration_changed": false,
+  "three_story_frozen_evidence_changed": false,
+  "phase11_implementation_sha256": "aa20111933b6f690ab4b3fb597dad16f4bfda6557f818add0e03e4e2670a8e26",
+  "phase12_implementation_sha256": "71d3b04bbb67899d7417c537022c120a70e901f955155dc9712f3529528746cc",
+  "changed_structural_modules": [
+    "src/steel_frame_optimization/optimization/evaluator.py",
+    "src/steel_frame_optimization/optimization/campaign.py",
+    "src/steel_frame_optimization/validation/phase12.py"
+  ],
+  "verification_required": [
+    "canonical Phase 3, 5, 7, 8, 9 and 10 three-story evidence equality",
+    "current three-story evaluator inputs equal the Phase 10 freeze",
+    "Phase 9 completed-campaign evidence regression",
+    "full locked regression suite"
+  ]
+}

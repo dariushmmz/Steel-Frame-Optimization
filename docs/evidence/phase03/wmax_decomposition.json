@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-29",
+  "validation_status": "not engineering-validated",
+  "domain_label": "273-section domain, pending client confirmation",
+  "reference_wmax_n": 1974010.0,
+  "paper_spread_relative": 0.002,
+  "computed_wmax_n": 1802196.9874227915,
+  "signed_relative_difference": -0.08703755937265184,
+  "groups": [
+    {"group_id": "1", "member_type": "column", "member_count": 6, "total_length_m": 23.7744, "domain": "all_w", "heaviest_section": "W14X730", "heaviest_source_weight_lb_per_ft": 730.0, "heaviest_weight_n_per_m": 10653.549144160646, "contribution_n": 253281.73877293288},
+    {"group_id": "2", "member_type": "column", "member_count": 9, "total_length_m": 35.6616, "domain": "all_w", "heaviest_section": "W14X730", "heaviest_source_weight_lb_per_ft": 730.0, "heaviest_weight_n_per_m": 10653.549144160646, "contribution_n": 379922.6081593993},
+    {"group_id": "3", "member_type": "beam", "member_count": 4, "total_length_m": 36.576, "domain": "all_w", "heaviest_section": "W14X730", "heaviest_source_weight_lb_per_ft": 730.0, "heaviest_weight_n_per_m": 10653.549144160646, "contribution_n": 389664.2134968198},
+    {"group_id": "4", "member_type": "beam", "member_count": 4, "total_length_m": 36.576, "domain": "all_w", "heaviest_section": "W14X730", "heaviest_source_weight_lb_per_ft": 730.0, "heaviest_weight_n_per_m": 10653.549144160646, "contribution_n": 389664.2134968198},
+    {"group_id": "5", "member_type": "beam", "member_count": 4, "total_length_m": 36.576, "domain": "all_w", "heaviest_section": "W14X730", "heaviest_source_weight_lb_per_ft": 730.0, "heaviest_weight_n_per_m": 10653.549144160646, "contribution_n": 389664.2134968198}
+  ],
+  "subtotals": {"columns_n": 633204.3469323321, "beams_n": 1168992.6404904595, "member_count": 27, "centerline_length_m": 169.164},
+  "hypotheses": {
+    "full_source_list_for_all_groups": "same as configured group domains; all five use all_w and W14X730 is the source maximum",
+    "group_specific_domains": "same maximum because all five base families are all_w and published filters remove weaker lower-bound rows only",
+    "member_length_convention": "12 beams x 9.144 m plus 15 columns x 3.9624 m equals 169.164 m; clear lengths would reduce Wmax and cannot close a low result",
+    "unit_conversion": "730 lb/ft multiplied by 4.4482216152605 N/lbf and divided by 0.3048 m/ft equals 10653.549144160646 N/m",
+    "member_counting": "the source topology has 12 beams and 15 columns; no member is omitted from the generated audit"
+  },
+  "heavier_section_hypothesis": {"required_uniform_weight_n_per_m": 11669.208578657399, "required_uniform_weight_lb_per_ft": 799.5947779608282, "increment_over_W14X730_lb_per_ft": 69.5947779608282, "required_added_wmax_n": 171813.01257720846, "row_added": false},
+  "v15_W14X808_non_domain_hypothesis": {"weight_lb_per_ft": 808.0, "hypothetical_wmax_n": 1994760.5011474183, "signed_relative_difference_from_reference": 0.010511852091640003, "within_paper_spread": false, "domain_changed": false},
+  "member_count_hypothesis": {"beam_count": 12, "column_count": 19, "hypothetical_wmax_n": 1971051.47993808, "absolute_relative_difference": 0.0014987361066660916, "within_paper_spread": true, "conflicts_with_topology": true, "conflict": "requires four extra story columns; Fig. 4 has five column lines across three stories, exactly 15 column members"},
+  "conclusion": {"reproduces_reference_without_conflict": false, "finding": "Only an impossible 19-column recount reaches the 0.2% spread among tested count hypotheses. The current source maximum is too light; a uniform 799.595 lb/ft maximum would be required, while W14X808 overshoots by 1.051%. No definition or domain was changed.", "adr_required_for_definition_change": true}
+}

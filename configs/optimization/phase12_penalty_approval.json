@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "record_id": "phase12-penalty-approval-v1",
+  "approval_status": "approved",
+  "authorized_by": "delegated_technical_owner",
+  "authorization_date": "2026-11-03",
+  "authorization_scope": "all_approved_three_and_nine_story_campaigns",
+  "penalty_policy_id": "normalized-additive-feasibility-offset-v1",
+  "penalty_policy_path": "configs/analysis/phase8_objective_penalty_policy.json",
+  "penalty_policy_sha256": "a9ebb35ad9274c21e136375979fa11397699a661e535a48fed2e074174aebe48",
+  "campaign_identity_compatibility_sha256": "7fb21ee33165cad631c4c60ef62840ede24ca1ed68e9bb37f4f7155873b29a6a",
+  "decision_ids": ["DEC-004", "ASM-016"]
+}

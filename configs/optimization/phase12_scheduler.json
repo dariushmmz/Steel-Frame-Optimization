@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "campaigns": [
+    "case1_filtered",
+    "case1_no_filter",
+    "case2"
+  ],
+  "seeds": [
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+    20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+  ],
+  "completed_baseline": {
+    "case1_filtered": [0, 1, 2, 3, 6, 7, 9, 11, 13],
+    "case1_no_filter": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14],
+    "case2": [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12]
+  },
+  "initial_assignments": [
+    {
+      "campaign": "case1_filtered",
+      "seed": 4,
+      "platform": "kaggle",
+      "remote_id": "dariushmzx/steel-frame-phase-12-case1-filtered-seed-04"
+    },
+    {
+      "campaign": "case2",
+      "seed": 10,
+      "platform": "kaggle",
+      "remote_id": "dariushmzx/steel-frame-phase-12-case2-seed-10"
+    },
+    {
+      "campaign": "case1_filtered",
+      "seed": 10,
+      "platform": "colab",
+      "remote_id": "phase12-filtered"
+    }
+  ],
+  "kaggle_owner": "dariushmzx",
+  "kaggle_slots": 3,
+  "colab_session": "phase12-filtered",
+  "colab_slots": 1,
+  "github_enabled": false,
+  "github_repository": "dariushmmz/Steel-Frame-Optimization",
+  "github_branch": "main",
+  "github_workflow": "phase12-github.yml",
+  "github_cli": "outputs/runs/github_cli/bin/gh.exe",
+  "github_slots": 1,
+  "github_chunk_epochs": 40,
+  "poll_seconds": 300,
+  "snapshot_seconds": 1800,
+  "evaluation_requests_per_seed": 20000,
+  "source_project_commit": "cf628c32f61b72b76fe5627ade9c40adcb25357f"
+}

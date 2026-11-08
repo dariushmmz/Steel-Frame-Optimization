@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "11",
+  "title": "Invalid decision ID",
+  "owner": "Client",
+  "blocking_phases": ["Phase 1"],
+  "status": "awaiting_owner",
+  "options": [
+    {"option_id": "A", "summary": "Option", "tradeoffs": ["Trade-off"]}
+  ],
+  "selected_option_id": "A"
+}
+

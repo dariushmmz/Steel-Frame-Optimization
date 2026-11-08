@@ -1,0 +1,50 @@
+{
+ "milestone": "Phase 1 / M1 intake audit",
+ "audit_date": "2026-10-24",
+ "environment": {
+  "os": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "pypdf": "5.9.0",
+  "poppler_pdfinfo": "pdfinfo version 24.02.0"
+ },
+ "files": [
+  {
+   "id": "PLAN",
+   "received_name": "plan_implementation.md",
+   "bytes": 78416,
+   "sha256": "6c5a0b8309ddcf2e226b442db5197270fb48f9cc5d3180046a9a4e28ae3a6e33",
+   "lines": 1263,
+   "note": "Received baseline of the plan (pre-M1 edits); canonical path in plan is \"docs/plan implementation.md\""
+  },
+  {
+   "id": "REF-A",
+   "received_name": "2019-2.pdf",
+   "bytes": 2415516,
+   "sha256": "2e32a5df2845190bce3609921b980fb617d5c3493ddf3abd9a84624350d982aa",
+   "title": "Two-stage optimal seismic design of steel moment frames using the LRFD-PBD method",
+   "author": null,
+   "producer": "Acrobat Distiller 10.0.0 (Windows)",
+   "creation_date": "Thu Feb 21 00:08:31 2019 UTC",
+   "pages": 13,
+   "page_size": "595.276 x 793.701 pts",
+   "pdf_version": "1.7",
+   "plan_section_0_4_sha256": "2E32A5DF2845190BCE3609921B980FB617D5C3493DDF3ABD9A84624350D982AA",
+   "matches_plan": true
+  },
+  {
+   "id": "REF-B",
+   "received_name": "document.pdf",
+   "bytes": 2035569,
+   "sha256": "3fea52e4fa704638bdfc61c872bdcf0eb1198d73880b2a75fb1441e670f5b4e0",
+   "title": "Final Word - edited by format",
+   "author": "Farzad",
+   "producer": "PDF Xpansion, Version 12.0.3.3",
+   "creation_date": "Tue Oct 31 16:26:19 2017 UTC",
+   "pages": 20,
+   "page_size": "595 x 842 pts (A4)",
+   "pdf_version": "1.6",
+   "plan_section_0_4_sha256": "3FEA52E4FA704638BDFC61C872BDCF0EB1198D73880B2A75FB1441E670F5B4E0",
+   "matches_plan": true
+  }
+ ]
+}

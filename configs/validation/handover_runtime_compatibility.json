@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "compatibility_id": "three-story-handover-runtime-v1",
+  "change_scope": "campaign_approval_input_only",
+  "structural_calculation_code_changed": false,
+  "frozen_phase10_implementation_sha256": "ebdd49acf077252b3c929157262b9e091ca128c401fe9d7bea52cbd8a68adce6",
+  "handover_runtime_implementation_sha256": "f375c31a3788b2545f2d6707170ce874245145314b675a3045bfbee32cfc1ce5",
+  "campaign_sha256": "aa2f2f23e33bd8579b3c80f33584597e3a39cbecf3c712c3dba8ba17cf2e1ab8",
+  "penalty_policy_sha256": "a9ebb35ad9274c21e136375979fa11397699a661e535a48fed2e074174aebe48",
+  "verification_required": [
+    "full_regression_suite",
+    "fresh_best_design_evaluation",
+    "local_ga_pilot"
+  ]
+}

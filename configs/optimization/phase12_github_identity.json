@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "sections_sha256": "13f75d47cca20b3028c377ba46466fca5a0833c1ec578fb40c9b099d30fdb8cf",
+  "campaigns": {
+    "case1_filtered": {
+      "campaign_sha256": "078bdfc1e57cd6538d37be9f6ae2b027db9e51766fa1bee2de557703f11dee77",
+      "implementation_sha256": "71d3b04bbb67899d7417c537022c120a70e901f955155dc9712f3529528746cc"
+    },
+    "case1_no_filter": {
+      "campaign_sha256": "3f6bc46ce9b723c25e006455d5b4e265234055052bff8b09f1b64cfbb73f5d05",
+      "implementation_sha256": "71d3b04bbb67899d7417c537022c120a70e901f955155dc9712f3529528746cc"
+    },
+    "case2": {
+      "campaign_sha256": "fc697f27fd62e822030de6a28b1a8455e723ea5fea92a4893ed388d917ba1db8",
+      "implementation_sha256": "71d3b04bbb67899d7417c537022c120a70e901f955155dc9712f3529528746cc"
+    }
+  },
+  "chunk_epochs": 40,
+  "maximum_job_minutes": 330,
+  "artifact_retention_days": 1
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "case_id": "valid_primary",
+  "frame_id": "synthetic",
+  "variant_kind": "primary",
+  "ls_target_ratio": 0.025,
+  "ls_target_decision": "DEC-001",
+  "performance_level_mapping": null,
+  "mapping_status": "awaiting_structural_engineer_DEC-002",
+  "solver_policy_id": "placeholder"
+}
+

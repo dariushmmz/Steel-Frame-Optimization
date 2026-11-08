@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-27",
+  "validation_layers": [
+    "source inspection",
+    "research-result comparison (layer 3 count only)"
+  ],
+  "raw_source": {
+    "filename": "AISC Shapes Database v14.1.xls",
+    "repository_policy": "local ignored file; full proprietary workbook is not committed",
+    "retrieved_at_utc": "2026-10-27T01:16:48.1338490Z",
+    "retrieval_url": "https://raw.githubusercontent.com/anagouveia1/excel/master/AISC%20Shapes%20Database%20v14.1.xls",
+    "mirror_owner": "anagouveia1/excel on GitHub",
+    "bytes": 4319232,
+    "sha256": "492cb5dfc59d609bd02da84f069e794244ba8b0e8e80bd481e73eff327658584",
+    "authority_limitation": "AISC pages confirm the v14.1 database and 14th-edition scope, but the retired original file could not be fetched and this mirror hash is not independently authenticated"
+  },
+  "workbook": {
+    "reader": "xlrd 2.0.2",
+    "sheet": "Database v14.1",
+    "rows_including_header": 1996,
+    "columns": 156,
+    "wide_flange_filter": "Type == W",
+    "wide_flange_rows": 273,
+    "w14_filter": "Type == W and EDI_Std_Nomenclature starts with W14X",
+    "w14_rows": 36,
+    "first_wide_flange": "W44X335",
+    "last_wide_flange": "W4X13"
+  },
+  "w14_names": [
+    "W14X730",
+    "W14X665",
+    "W14X605",
+    "W14X550",
+    "W14X500",
+    "W14X455",
+    "W14X426",
+    "W14X398",
+    "W14X370",
+    "W14X342",
+    "W14X311",
+    "W14X283",
+    "W14X257",
+    "W14X233",
+    "W14X211",
+    "W14X193",
+    "W14X176",
+    "W14X159",
+    "W14X145",
+    "W14X132",
+    "W14X120",
+    "W14X109",
+    "W14X99",
+    "W14X90",
+    "W14X82",
+    "W14X74",
+    "W14X68",
+    "W14X61",
+    "W14X53",
+    "W14X48",
+    "W14X43",
+    "W14X38",
+    "W14X34",
+    "W14X30",
+    "W14X26",
+    "W14X22"
+  ],
+  "published_requirements": {
+    "general_wide_flange_count": 274,
+    "w14_count": 36,
+    "source": "REF-A PDF pp. 6-10 / journal pp. 82-86 and REF-B PDF pp. 11-12 / printed pp. 53-54"
+  },
+  "result": {
+    "general_count": "fail: observed 273, required 274, exact tolerance",
+    "w14_count": "pass: observed 36, required 36",
+    "phase_status": "blocked before implementation",
+    "structural_evaluations": 0
+  }
+}

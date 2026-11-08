@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "domain_label": "273-section domain, pending client confirmation",
+  "assumption_id": "ASM-028",
+  "beam": {
+    "dead_load_factor": 1.2,
+    "live_load_factor": 1.6,
+    "zero_moment_fraction": 0.1,
+    "maximum_moment_coefficient": 0.08,
+    "resistance_factor": 0.9,
+    "yield_strength_pa": 248000000.0,
+    "section_modulus": "plastic_zx_compact_assumption"
+  },
+  "column": {
+    "dead_load_factor": 1.2,
+    "live_load_factor": 1.6,
+    "resistance_factor": 0.9,
+    "yield_strength_pa": 345000000.0,
+    "elastic_modulus_pa": 200000000000.0,
+    "buckling_axis": "major_rx",
+    "preliminary_effective_length_factor": 1.0,
+    "effective_length_basis": "per_story_centerline_length"
+  },
+  "published_removed_counts": {
+    "1": 16,
+    "2": 32,
+    "3": 42,
+    "4": 42,
+    "5": 38
+  }
+}

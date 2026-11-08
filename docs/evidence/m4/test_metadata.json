@@ -1,0 +1,21 @@
+{
+  "milestone": "Phase 1 / M4 clean-restart rerun",
+  "date": "2026-10-27",
+  "validation_layer": "automated software tests (layer 1)",
+  "results": {
+    "tests_collected": 55,
+    "tests_passed": 55,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "tests_xfailed": 0,
+    "pytest_seconds": 2.70,
+    "canonical_dimensions_round_tripped": 7,
+    "ruff_lint": "pass",
+    "ruff_format": "pass",
+    "mypy_strict": "pass",
+    "mypy_source_files": 31
+  },
+  "network": "no network used during M4",
+  "structural_evaluations": 0
+}
+

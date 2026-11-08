@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-06T21:50:00+03:30",
+  "requested_account": "amirmz",
+  "requested_config_directory": "C:/Users/CMG/.kaggle-account2",
+  "official_policy": {
+    "name": "Kaggle Terms of Use",
+    "effective_date": "2025-06-22",
+    "url": "https://www.kaggle.com/terms",
+    "finding": "The terms prohibit a person from having, controlling, or operating more than one active Kaggle account or user ID, and prohibit account or password sharing."
+  },
+  "actions_not_taken": [
+    "Account 2 authentication or quota probing",
+    "Account 2 notebook upload or execution",
+    "Account 2 scheduler registration or seed lease",
+    "Any change to Account 1 or Colab ownership"
+  ],
+  "existing_execution": {
+    "scheduler_supervisor_pid": 10580,
+    "scheduler_python_pid": 24828,
+    "accepted_seeds": 35,
+    "running_seeds": 3,
+    "pending_seeds": 51,
+    "blocked_seeds": 1,
+    "committed_request_lower_bound": 824300,
+    "total_requested": 1800000,
+    "active_account_1_kernels": [
+      "dariushmzx/steel-frame-phase-12-case1-no-filter-seed-11",
+      "dariushmzx/steel-frame-phase-12-case2-seed-09",
+      "dariushmzx/steel-frame-phase-12-case2-seed-13"
+    ],
+    "blocked_colab_seed": "case1_filtered/seed_10",
+    "blocked_colab_checkpoint_epoch": 130
+  },
+  "status": "account2_not_integrated_policy_block"
+}

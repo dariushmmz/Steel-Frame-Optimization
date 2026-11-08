@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-06T20:48:37.207252+03:30",
+  "scheduler": {
+    "state_path": "outputs/runs/phase12_scheduler/state.json",
+    "event_log": "outputs/runs/phase12_scheduler/events.jsonl",
+    "snapshot_log": "outputs/runs/phase12_scheduler/snapshots.jsonl",
+    "singleton_lock": "outputs/runs/phase12_scheduler/scheduler.lock",
+    "poll_seconds": 300,
+    "snapshot_seconds": 1800,
+    "kaggle_slots": 3,
+    "colab_slots": 1,
+    "supervisor_requires_windows_session": true
+  },
+  "validated_completions": [
+    {
+      "campaign": "case1_no_filter",
+      "seed": 12,
+      "completed_epochs": 200,
+      "evaluation_requests": 20000,
+      "structural_executions": 19379,
+      "cache_hits": 621,
+      "campaign_sha256": "3f6bc46ce9b723c25e006455d5b4e265234055052bff8b09f1b64cfbb73f5d05",
+      "checkpoint_sha256": "042ea303a382d104aaf9697c46cb386569e4fc783ff9f1e3eb25890a05793a22",
+      "result_sha256": "6d7a944f885989361695de7fb12f73c623cccdaf0aa5bd6a6fb5169ea1713b10",
+      "strict_schema_passed": true,
+      "history_passed": true,
+      "campaign_and_evaluator_identity_passed": true,
+      "independent_champion_reevaluation_equal": true
+    },
+    {
+      "campaign": "case1_filtered",
+      "seed": 4,
+      "completed_epochs": 200,
+      "evaluation_requests": 20000,
+      "structural_executions": 19362,
+      "cache_hits": 638,
+      "campaign_sha256": "078bdfc1e57cd6538d37be9f6ae2b027db9e51766fa1bee2de557703f11dee77",
+      "checkpoint_sha256": "6e9355bff211abb4543314514e98ab3d2717c881a96ceee2c0e4bc113b448dd6",
+      "result_sha256": "1c4e0641c535a00dc23bb1df8c5ba9bfbb310e0fd5c75fd9d5a1b108c50e830d",
+      "strict_schema_passed": true,
+      "history_passed": true,
+      "campaign_and_evaluator_identity_passed": true,
+      "independent_champion_reevaluation_equal": true
+    }
+  ],
+  "activation_snapshot": {
+    "completed_seeds": 34,
+    "running_seeds": 4,
+    "pending_seeds": 52,
+    "failed_seeds": 0,
+    "blocked_seeds": 0,
+    "committed_requests_lower_bound": 818700,
+    "total_requests": 1800000,
+    "active": [
+      "colab:case1_filtered:10",
+      "kaggle:case1_no_filter:11",
+      "kaggle:case2:10",
+      "kaggle:case2:13"
+    ]
+  },
+  "acceptance_tests": {
+    "command": "uv run --frozen --offline --no-sync pytest -q tests/unit/test_phase12_scheduler.py tests/unit/test_phase12_kaggle_deployment.py",
+    "result": "15 passed",
+    "duplicate_prevention": true,
+    "restart_reconciliation": true,
+    "transient_connection_retains_ownership": true,
+    "slot_refill": true,
+    "exact_accounting": true,
+    "expired_colab_session_recovery": true,
+    "manual_drive_authorization_continuation": true
+  },
+  "full_locked_gate": {
+    "python": "3.12.6",
+    "ruff_format": "passed",
+    "ruff_lint": "passed",
+    "strict_mypy": "passed (87 source files)",
+    "pytest": "233 passed"
+  }
+}

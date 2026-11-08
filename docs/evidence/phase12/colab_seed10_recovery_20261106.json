@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-06T22:57:51+03:30",
+  "campaign": "case1_filtered",
+  "seed": 10,
+  "expired_session_confirmed": true,
+  "recovery_checkpoint": {
+    "completed_epochs": 130,
+    "evaluation_requests": 13000,
+    "structural_executions": 12619,
+    "cache_hits": 381,
+    "bytes": 69123144,
+    "sha256": "d9b1a27fdf96d3c8035fa223decc5dcabd14b03634ba83cffb9492a245acd6de",
+    "campaign_identity_equal": true,
+    "evaluator_identity_equal": true,
+    "population_restored_equal": true,
+    "rng_state_restored_equal": true,
+    "cache_restored_equal": true,
+    "history_restored_equal": true,
+    "zero_advance_restore_equal": true,
+    "restore_probe_sha256": "d455abc64fcdf2700cd5938396fce9e2a99cbbdf60e0993ff865f75f9f6caa95"
+  },
+  "initial_replacement_failure": {
+    "worker_return_code": 2,
+    "cause": "The replacement bootstrap uploaded the recovery manifest but omitted /content/colab_phase12_seed_job.py required by the frozen Python subprocess.",
+    "new_evaluation_requests": 0,
+    "failed_lease_token": "a36ebca1e2e641a7952365d202824177"
+  },
+  "corrected_recovery": {
+    "session": "phase12-filtered",
+    "endpoint": "m-s-usw1c2-optbkgcysuii",
+    "launcher_pid": 24324,
+    "remote_status": "BUSY",
+    "active_lease_token": "2b2fa58bf0804cc09ebd024720e7d0fd",
+    "active_lease_sha256": "07278344952d21c7864738cdf5e65753312011c1741e23912dd618a1413d7d63",
+    "active_lease_state": "running",
+    "resume_start_epoch": 130,
+    "duplicate_execution_detected": false
+  },
+  "implementation": {
+    "scheduler_sha256": "fe1129c37a7d121e12e4d8adbf85ca623773d46436fe2cf9bc2f7824cc445e41",
+    "scheduler_tests_sha256": "1ad5f27446d3444502fe9039746ecf960e0f13e968e424598fc99400a5f44d8f",
+    "replacement_uploads_manifest_and_worker": true,
+    "successful_recovery_rearms_future_expiration": true,
+    "missing_blocked_session_recreated_only_after_retry_marker": true
+  },
+  "locked_gate": {
+    "python": "3.12.6",
+    "ruff_format": "pass",
+    "ruff_lint": "pass",
+    "strict_mypy": "pass",
+    "pytest": "235 passed",
+    "failures": 0,
+    "skips": 0,
+    "xfails": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "optimization_ordering_status": "approved_by_delegated_technical_owner_2026-10-30",
+  "categories": {
+    "input_invalid": "Configuration or genotype failed boundary validation.",
+    "provenance_mismatch": "A required hash or runtime identity did not match.",
+    "dependency_unavailable": "A declared runtime dependency could not be used.",
+    "not_implemented": "The requested phase capability is intentionally unavailable.",
+    "numerical_nonconvergence": "A future numerical analysis exhausted its declared policy.",
+    "numerical_inconsistency": "A completed numerical response violated an invariant such as equilibrium.",
+    "structural_infeasibility": "A future completed analysis violated a structural constraint.",
+    "internal_error": "An unexpected software defect interrupted evaluation.",
+    "user_cancelled": "The owner or operator cancelled the operation."
+  }
+}
+

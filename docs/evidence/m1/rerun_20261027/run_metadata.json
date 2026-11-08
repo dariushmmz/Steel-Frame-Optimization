@@ -1,0 +1,33 @@
+{
+  "milestone": "Phase 1 / M1 clean-restart rerun",
+  "date": "2026-10-27",
+  "validation_layers": [
+    "source inspection (research-comparison layer 3, text only)",
+    "automated software tests (layer 1) for evidence integrity"
+  ],
+  "environment": {
+    "os": "Windows",
+    "python": "3.12.6",
+    "pypdf": "6.10.0 (existing system installation; not in uv.lock)",
+    "pdfinfo": "Poppler 23.05.0",
+    "uv": "0.6.14"
+  },
+  "results": {
+    "reference_hashes_matched": 2,
+    "reference_hashes_total": 2,
+    "page_counts": {
+      "REF-A": 13,
+      "REF-B": 20
+    },
+    "claim_checks_passed": 46,
+    "claim_checks_total": 46,
+    "original_evidence_byte_hashes_unchanged": 3,
+    "layer_1_tests_passed": 1,
+    "layer_1_tests_total": 1
+  },
+  "network": "no network used during M1; environment bootstrap occurred before M1 and is recorded in the M1 report",
+  "warnings": [
+    "pypdf emitted startxref and unexpected escaped string parser warnings for the supplied PDFs"
+  ]
+}
+

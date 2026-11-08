@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "validation_id": "phase10-three-story-model-freeze-v1",
+  "phase9_summary": "docs/evidence/phase09/main_campaign/main_campaign_summary.json",
+  "phase9_summary_sha256": "c0875430e96bd233eac9265ba20f6af275606b123d78ed8d1d4104a451c4d00b",
+  "phase9_completion_commit": "6ebbb428703b77409c023b39249970619d26bed3",
+  "champion_relative_tolerance": 1e-12,
+  "objective_relative_tolerance": 1e-12,
+  "pushover_refinement_ratios": [0.001, 0.0005, 0.00025],
+  "pushover_refinement_relative_tolerance": 0.02,
+  "no_filter_study": "all preliminary-filter-rejected single-group substitutions into the best champion",
+  "gravity_sensitivity": {
+    "label": "1.1D_plus_0.275L",
+    "dead_factor": 1.1,
+    "live_factor": 0.275,
+    "acceptance_role": "diagnostic_only"
+  },
+  "weak_axis_sensitivity": {
+    "label": "column_Pcl_using_ry_instead_of_rx",
+    "acceptance_role": "diagnostic_only"
+  },
+  "published_case2_references": [
+    {
+      "algorithm": "PSO",
+      "objective": 0.0708,
+      "weight_kn": 144.50,
+      "uniformity_term": 0.025,
+      "source": "REF-A Table 4, PDF p. 7 / journal p. 83"
+    },
+    {
+      "algorithm": "GWO",
+      "objective": 0.0692,
+      "weight_kn": 139.70,
+      "uniformity_term": 0.039,
+      "source": "REF-A Table 4, PDF p. 7 / journal p. 83"
+    }
+  ],
+  "assumption_ids": ["ASM-003", "ASM-005", "ASM-012", "ASM-041"]
+}

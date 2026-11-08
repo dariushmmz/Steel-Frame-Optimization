@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-27",
+  "event": "Phase 1 delegated-input completion gate rerun",
+  "platform": "Windows-11-10.0.26100-SP0 AMD64",
+  "python": "3.12.6",
+  "uv": "0.6.14",
+  "validation_layer": 1,
+  "environment": {
+    "frozen": true,
+    "offline": true,
+    "packages_installed_from_cache": 33,
+    "sync_seconds": 2.52,
+    "network_used": false
+  },
+  "tests": {
+    "collected": 85,
+    "passed": 85,
+    "failed": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "seconds": 6.16
+  },
+  "quality": {
+    "lock_check": "resolved 35 packages offline; pass",
+    "ruff_format": "38 files unchanged and formatted; pass",
+    "ruff_lint": "pass",
+    "mypy_strict": "success; 37 source files"
+  },
+  "delegated_decisions": [
+    "DEC-011 / ASM-001",
+    "DEC-012 / ASM-002",
+    "DEC-020 / ASM-003"
+  ],
+  "network": "no network used",
+  "structural_evaluations": 0,
+  "phase_status": "complete and verified under delegated-input authorization"
+}

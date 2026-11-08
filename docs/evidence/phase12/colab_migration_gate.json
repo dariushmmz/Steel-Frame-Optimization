@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-06T19:21:49.7326947+03:30",
+  "phase_status": "in_progress",
+  "production_seed": {
+    "campaign": "case1_filtered",
+    "seed": 10,
+    "source_checkpoint_completed_epochs": 124,
+    "source_checkpoint_evaluation_requests": 12400,
+    "source_checkpoint_bytes": 66628525,
+    "source_checkpoint_sha256": "5ca1b959d1f2a724f58c39d3a59188565bc4cb5ef2ddc482570041cf20ef03c3",
+    "colab_session": "phase12-filtered",
+    "colab_endpoint": "m-s-use1c2-2n175kuppevg4",
+    "cpu_count": 2,
+    "state_at_capture": "running",
+    "duplicate_seed_execution_detected": false
+  },
+  "drive_gate": {
+    "mount_path": "/content/drive",
+    "write_read_sha256": "c8fd639960d171ca2bedd2264dcf5fc25dd8a4c34c843a308c9f0ba1c4e8c61e",
+    "kernel_restart_reread_equal": true,
+    "immutable_runtime_bytes": 180564024,
+    "immutable_runtime_sha256": "c382c0867130d68ba3ee81869f7cca382c09a34c3e0007712fe1fd2c731f755d",
+    "immutable_project_bytes": 962779,
+    "immutable_project_sha256": "1e4b92ae2b15bc3f5851cbd6b7ffc2ac265e207e4d2c34fa74f8e5e9a325c15a",
+    "initial_recovery_snapshot_verified": true,
+    "initial_recovery_snapshot": "case1_filtered/recovery/seed_10/seed_10_epoch_124.json"
+  },
+  "compatibility_gate": {
+    "python_version": "3.12.6",
+    "openseespy_version": "3.8.0.0",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "input_checkpoint_sha256": "837a933fce479666497aec02272718adf6d3d6c82f5940ffcde4b967402bbc05",
+    "identity_and_recovery_passed": true,
+    "new_result_count": 96,
+    "new_result_difference_count": 0,
+    "new_history_difference_count": 0,
+    "platform_payload_hash_difference_count": 13,
+    "relative_tolerance": 1e-08,
+    "absolute_tolerance": 1e-10,
+    "maximum_absolute_difference": 1.4551915228366852e-11,
+    "maximum_relative_difference": 5.702042913572931e-15,
+    "numerical_equivalence_passed": true
+  },
+  "checkpoint_policy": {
+    "local_canonical_interval_requests": 100,
+    "drive_durable_interval_requests": 1000,
+    "retained_independently_validated_snapshots": 2,
+    "rotation_after_upload_hash_reread_schema_and_restore_checks": true,
+    "maximum_committed_request_loss_after_drive_snapshot": 900,
+    "duplicate_guard": "exclusive per-seed Drive lease"
+  },
+  "concurrent_execution": {
+    "kaggle_running": [
+      "dariushmzx/steel-frame-phase-12-case2-seed-10",
+      "dariushmzx/steel-frame-phase-12-case1-no-filter-seed-12",
+      "dariushmzx/steel-frame-phase-12-case1-filtered-seed-04"
+    ],
+    "kaggle_cpu_per_kernel": 4,
+    "colab_running": "case1_filtered seed 10",
+    "total_active_cpu_count": 14
+  },
+  "local_verification": {
+    "python_version": "3.12.6",
+    "ruff_format_passed": true,
+    "ruff_lint_passed": true,
+    "strict_mypy_passed": true,
+    "pytest_passed": 226,
+    "pytest_failed": 0,
+    "pytest_skipped": 0,
+    "pytest_xfailed": 0
+  }
+}

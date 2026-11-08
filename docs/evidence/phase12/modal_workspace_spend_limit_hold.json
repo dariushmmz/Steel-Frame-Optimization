@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-05T00:11:45+03:30",
+  "timezone": "Asia/Tehran",
+  "status": "blocked_external_workspace_spend_limit",
+  "modal_workspace_id": "ac-D6wPYT02tP7mhcaJg7HtIE",
+  "probe_command": "C:\\Users\\CMG\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m modal run --quiet deployment/modal_phase12.py::probe",
+  "probe_exit_code": 1,
+  "probe_error": "Workspace ac-D6wPYT02tP7mhcaJg7HtIE has exceeded its spend limit",
+  "new_workload_submitted": false,
+  "volume": "steel-frame-phase12-v1",
+  "stopped_app_ids": {
+    "case1_filtered": "ap-OHtoojuZ8nmAQjSIsInt5B",
+    "case1_no_filter": "ap-52XGLxfeeVARalIeWMeSTS",
+    "case2": "ap-r0KwTajanpvLu4yZ5jmzU1"
+  },
+  "stopped_app_tasks": 0,
+  "campaign_progress": {
+    "case1_filtered": {
+      "completed_seed_results": 9,
+      "committed_evaluation_requests": 235200,
+      "remaining_evaluation_requests": 364800,
+      "canonical_checkpoints": 16
+    },
+    "case1_no_filter": {
+      "completed_seed_results": 11,
+      "committed_evaluation_requests": 297100,
+      "remaining_evaluation_requests": 302900,
+      "canonical_checkpoints": 18
+    },
+    "case2": {
+      "completed_seed_results": 11,
+      "committed_evaluation_requests": 275000,
+      "remaining_evaluation_requests": 325000,
+      "canonical_checkpoints": 17
+    }
+  },
+  "overall": {
+    "completed_seed_results": 31,
+    "required_seed_results": 90,
+    "committed_evaluation_requests": 807300,
+    "required_evaluation_requests": 1800000,
+    "committed_progress_percent": 44.85,
+    "remaining_evaluation_requests": 992700,
+    "remaining_measured_cost_projection_usd": 32.37942114191101,
+    "remaining_contingent_cost_projection_usd": 38.855305370293216
+  },
+  "project_cost_guards": {
+    "maximum_authorized_total_compute_cost_usd": 100.0,
+    "maximum_projected_compute_cost_usd_per_submission": 40.0,
+    "unchanged": true
+  },
+  "required_external_action": "Raise the Modal workspace spending limit above accrued charges with at least USD 38.86 of remaining contingent project headroom. The repository's USD 100 aggregate guard remains in force.",
+  "phase_status": "Phase 12 remains in progress; Phase 13 is gated"
+}

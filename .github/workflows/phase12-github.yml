@@ -1,0 +1,119 @@
+name: Phase 12 bounded GA chunk
+
+run-name: phase12-${{ inputs.campaign }}-seed-${{ inputs.seed }}-${{ inputs.assignment_token }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      campaign:
+        description: Frozen Phase 12 campaign
+        required: true
+        type: choice
+        options:
+          - case1_filtered
+          - case1_no_filter
+          - case2
+      seed:
+        description: Seed number (00-29)
+        required: true
+        type: string
+      target_epochs:
+        description: Absolute checkpoint target, at most 40 epochs beyond the prior checkpoint
+        required: true
+        type: string
+      previous_run_id:
+        description: Prior successful chunk run ID; blank starts an unclaimed seed from epoch zero
+        required: false
+        type: string
+      assignment_token:
+        description: Persistent scheduler lease token
+        required: true
+        type: string
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: phase12-${{ inputs.campaign }}-seed-${{ inputs.seed }}
+  cancel-in-progress: false
+
+jobs:
+  run-chunk:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    steps:
+      - name: Check out source without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install exact Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12.6
+
+      - name: Reconstruct private section-domain input
+        shell: bash
+        env:
+          AISC_DATA_GZ_B64_1: ${{ secrets.AISC_DATA_GZ_B64_1 }}
+          AISC_DATA_GZ_B64_2: ${{ secrets.AISC_DATA_GZ_B64_2 }}
+        run: |
+          set -euo pipefail
+          test -n "$AISC_DATA_GZ_B64_1"
+          test -n "$AISC_DATA_GZ_B64_2"
+          mkdir -p data/processed
+          printf '%s%s' "$AISC_DATA_GZ_B64_1" "$AISC_DATA_GZ_B64_2" \
+            | base64 --decode | gzip --decompress > data/processed/aisc_v14_1_w_shapes.json
+          echo '13f75d47cca20b3028c377ba46466fca5a0833c1ec578fb40c9b099d30fdb8cf  data/processed/aisc_v14_1_w_shapes.json' \
+            | sha256sum --check --strict
+
+      - name: Restore prior validated checkpoint
+        if: ${{ inputs.previous_run_id != '' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: phase12-checkpoint
+          path: prior
+          run-id: ${{ inputs.previous_run_id }}
+          github-token: ${{ github.token }}
+
+      - name: Install locked environment
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check 'uv==0.6.14'
+          uv sync --frozen --python "$(command -v python)"
+          uv run --frozen --no-sync python --version
+
+      - name: Execute bounded deterministic chunk
+        shell: bash
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+          MKL_NUM_THREADS: '1'
+          PYTHONHASHSEED: '0'
+        run: |
+          set -euo pipefail
+          checkpoint_args=()
+          if [[ -n "${{ inputs.previous_run_id }}" ]]; then
+            checkpoint_args=(--checkpoint-input prior/checkpoint.json)
+          fi
+          uv run --frozen --no-sync python deployment/github_phase12_chunk.py \
+            --campaign '${{ inputs.campaign }}' \
+            --seed '${{ inputs.seed }}' \
+            --target-epochs '${{ inputs.target_epochs }}' \
+            --assignment-token '${{ inputs.assignment_token }}' \
+            --output-root github-output \
+            "${checkpoint_args[@]}"
+
+      - name: Upload validated recovery state
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase12-checkpoint
+          path: |
+            github-output/checkpoint.json
+            github-output/job_status.json
+            github-output/result.json
+          if-no-files-found: error
+          compression-level: 9
+          retention-days: 1

@@ -1,0 +1,26 @@
+{
+  "milestone": "Phase 1 / M6 clean-restart rerun",
+  "date": "2026-10-27",
+  "validation_layer": "automated software tests (layer 1)",
+  "results": {
+    "full_tests_collected": 77,
+    "full_tests_passed": 77,
+    "full_tests_failed": 0,
+    "full_tests_skipped": 0,
+    "full_tests_xfailed": 0,
+    "full_pytest_seconds": 6.37,
+    "cli_unit_tests_passed": 76,
+    "cli_integration_tests_passed": 1,
+    "future_command_exit_codes": {
+      "evaluate": 2,
+      "campaign": 2,
+      "report": 2
+    },
+    "artifact_files_verified": 2,
+    "ruff_lint": "pass",
+    "ruff_format": "pass",
+    "mypy_strict": "pass"
+  },
+  "network": "no network used during M6",
+  "structural_evaluations": 0
+}

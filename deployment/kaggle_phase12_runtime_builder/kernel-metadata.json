@@ -1,0 +1,15 @@
+{
+  "id": "dariushmzx/steel-frame-phase-12-python-runtime",
+  "title": "Steel Frame Phase 12 Python Runtime",
+  "code_file": "build_runtime.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "dariushmzx/steel-frame-phase12-frozen-project"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

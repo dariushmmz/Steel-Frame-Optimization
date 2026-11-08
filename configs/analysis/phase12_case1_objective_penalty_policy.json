@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "stage1_constraint_scope": "gravity_strength_and_service",
+  "objective": {
+    "source": "REF-A Eq. (20), PDF p. 4 / journal p. 80",
+    "weight_coefficient": 0.95,
+    "uniformity_coefficient": 0.05,
+    "maximum_structural_weight_n": 6760674.104169824,
+    "wmax_basis": "approved 273-section domain: W14 maximum for column groups, all-W maximum for beam groups, exact centerline lengths",
+    "wmax_research_reference_n": 7185870.0,
+    "uniformity_sum": "levels 1 through ns-1; divisor remains ns",
+    "assumption_ids": ["ASM-020", "ASM-042"]
+  },
+  "penalty": {
+    "schema_version": "1.0",
+    "policy_id": "normalized-additive-feasibility-offset-v1",
+    "feasible_transform": "F/(1+F)",
+    "infeasible_offset": 1.0,
+    "coefficients": {
+      "strength": 100.0,
+      "force_controlled_action": 100.0,
+      "hinge_rotation": 100.0,
+      "drift": 50.0,
+      "capacity_hierarchy": 50.0,
+      "target_state_shape": 25.0
+    },
+    "stage1_infeasible_objective_basis": "bounded_weight_contribution_only_uniformity_unavailable",
+    "failure_handling": "typed_failure_without_finite_ranking_score",
+    "client_approval_status": "awaiting_approval_before_main_campaigns",
+    "assumption_id": "ASM-016"
+  }
+}

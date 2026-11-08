@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "mode": "no_preliminary_lower_bound_control",
+  "base_filter_path": "docs/evidence/phase11/phase11_artifact.json",
+  "base_filter_sha256": "4befe5fa3a84b85069ce8f184ea90e9906e3c21c210fdfe7b980f21e74ba6d9d",
+  "source": "REF-A Table 8 Case 1 without lower bound control; no rows are removed"
+}

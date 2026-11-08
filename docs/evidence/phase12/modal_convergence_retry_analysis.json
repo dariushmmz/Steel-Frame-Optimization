@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "phase12-modal-convergence-retry-snapshot-2026-11-04",
+  "captured_at": "2026-11-04T17:28:41+03:30",
+  "timezone": "Asia/Tehran",
+  "scope": "read-only snapshot of the running Phase 12 Modal campaigns",
+  "volume": "steel-frame-phase12-v1",
+  "counting_method": {
+    "failed_attempt_definition": "one stderr solveCurrentStep convergence-test failure line",
+    "excluded_lines": [
+      "CTestNormDispIncr warning lines",
+      "StaticAnalysis failure lines",
+      "iteration/norm continuation lines"
+    ],
+    "double_count_control": "Each algorithm-specific solveCurrentStep line was counted once; the companion warning and StaticAnalysis lines from the same attempt were excluded.",
+    "resume_limitation": "The logs contain no evaluation identifier. Attempts re-executed after an interrupted, uncommitted epoch cannot be separated from first executions. They remain real operational solver work but cannot be deduplicated into unique logical evaluations.",
+    "frequency_denominator": "structural executions in the last durable per-seed epoch logs at the snapshot",
+    "denominator_limitation": "Warnings from the currently uncommitted epoch can precede the next durable structural-execution count, so frequency is an operational snapshot rather than an exact unique-evaluation incidence."
+  },
+  "solver_policy": {
+    "source": "configs/analysis/phase6_nonlinear_policy.json",
+    "tolerance": 1e-10,
+    "maximum_iterations": 40,
+    "configured_order": [
+      "Newton",
+      "NewtonLineSearch",
+      "KrylovNewton"
+    ],
+    "stderr_name_mapping": {
+      "Newton": "NewtonRaphson",
+      "NewtonLineSearch": "NewtonLineSearch",
+      "KrylovNewton": "AcceleratedNewton"
+    },
+    "other_configured_algorithms": []
+  },
+  "campaigns": {
+    "case1_filtered": {
+      "app_ids": [
+        "ap-3FeCOxlnR9Y5wqPTIH2Snd",
+        "ap-OHtoojuZ8nmAQjSIsInt5B"
+      ],
+      "committed_evaluation_requests": 169000,
+      "committed_structural_executions": 164025,
+      "cache_hits": 4975,
+      "completed_seed_results": 3,
+      "failed_attempts": {
+        "NewtonRaphson": 5678,
+        "NewtonLineSearch": 4980,
+        "AcceleratedNewton": 4538,
+        "other": 0,
+        "total": 15196
+      },
+      "failed_attempts_per_structural_execution": 0.09264441396128639,
+      "failed_attempts_per_100_structural_executions": 9.264441396128639,
+      "failed_attempt_distribution_percent": {
+        "NewtonRaphson": 37.36509607791524,
+        "NewtonLineSearch": 32.771782047907344,
+        "AcceleratedNewton": 29.863121874177416,
+        "other": 0.0
+      },
+      "completed_seed_runtime_seconds": {
+        "sample_size": 3,
+        "mean": 3439.0627702826664,
+        "median": 2937.071897726,
+        "minimum": 2647.041957961,
+        "maximum": 4733.074695461
+      },
+      "completed_seed_final_population_context": {
+        "population_slots": 300,
+        "numerical_failure_slots": 7,
+        "note": "Final-population slots are not the full unique evaluation cache and cannot be correlated with warning-bearing evaluations."
+      }
+    },
+    "case1_no_filter": {
+      "app_ids": [
+        "ap-bYcdWR3vFpCCvYGpS9oETZ",
+        "ap-52XGLxfeeVARalIeWMeSTS"
+      ],
+      "committed_evaluation_requests": 191600,
+      "committed_structural_executions": 186104,
+      "cache_hits": 5496,
+      "completed_seed_results": 6,
+      "failed_attempts": {
+        "NewtonRaphson": 7403,
+        "NewtonLineSearch": 6279,
+        "AcceleratedNewton": 5881,
+        "other": 0,
+        "total": 19563
+      },
+      "failed_attempts_per_structural_execution": 0.10511864333920819,
+      "failed_attempts_per_100_structural_executions": 10.511864333920819,
+      "failed_attempt_distribution_percent": {
+        "NewtonRaphson": 37.84184429790932,
+        "NewtonLineSearch": 32.09630424781475,
+        "AcceleratedNewton": 30.061851454275928,
+        "other": 0.0
+      },
+      "completed_seed_runtime_seconds": {
+        "sample_size": 6,
+        "mean": 3041.0675765101665,
+        "median": 2566.500722011,
+        "minimum": 1764.457583548,
+        "maximum": 5754.829252787
+      },
+      "completed_seed_final_population_context": {
+        "population_slots": 600,
+        "numerical_failure_slots": 8,
+        "note": "Final-population slots are not the full unique evaluation cache and cannot be correlated with warning-bearing evaluations."
+      }
+    },
+    "case2": {
+      "app_ids": [
+        "ap-rYoLlXhCPWH2QrN3nRqNvD",
+        "ap-r0KwTajanpvLu4yZ5jmzU1"
+      ],
+      "committed_evaluation_requests": 188500,
+      "committed_structural_executions": 182989,
+      "cache_hits": 5511,
+      "completed_seed_results": 8,
+      "failed_attempts": {
+        "NewtonRaphson": 7922,
+        "NewtonLineSearch": 6315,
+        "AcceleratedNewton": 5477,
+        "other": 0,
+        "total": 19714
+      },
+      "failed_attempts_per_structural_execution": 0.10773325172551355,
+      "failed_attempts_per_100_structural_executions": 10.773325172551356,
+      "failed_attempt_distribution_percent": {
+        "NewtonRaphson": 40.18464035710662,
+        "NewtonLineSearch": 32.03307294308613,
+        "AcceleratedNewton": 27.782286699807244,
+        "other": 0.0
+      },
+      "completed_seed_runtime_seconds": {
+        "sample_size": 8,
+        "mean": 2794.5625971255,
+        "median": 2854.7927077585,
+        "minimum": 1395.992676595,
+        "maximum": 4239.396631796
+      },
+      "completed_seed_final_population_context": {
+        "population_slots": 800,
+        "numerical_failure_slots": 7,
+        "note": "Final-population slots are not the full unique evaluation cache and cannot be correlated with warning-bearing evaluations."
+      }
+    }
+  },
+  "overall": {
+    "committed_structural_executions": 533118,
+    "failed_attempts": {
+      "NewtonRaphson": 21003,
+      "NewtonLineSearch": 17574,
+      "AcceleratedNewton": 15896,
+      "other": 0,
+      "total": 54473
+    },
+    "failed_attempts_per_structural_execution": 0.10217812941975322,
+    "failed_attempts_per_100_structural_executions": 10.217812941975323,
+    "failed_attempt_distribution_percent": {
+      "NewtonRaphson": 38.55671617131423,
+      "NewtonLineSearch": 32.261854496723146,
+      "AcceleratedNewton": 29.181429331962622,
+      "other": 0.0
+    }
+  },
+  "recovery_measurement": {
+    "warning_bearing_evaluation_count": null,
+    "warning_bearing_evaluations_recovered": null,
+    "warning_bearing_evaluations_ending_numerical_failure": null,
+    "recovery_rate_percent": null,
+    "reason": "Neither stderr nor the persisted compact EvaluationResult records a common evaluation identifier with SolverAttempt data. The checkpoint stores only the final compact disposition and a hash of the transient Stage 2 result."
+  },
+  "runtime_impact_measurement": {
+    "mean_evaluation_seconds_with_warning": null,
+    "median_evaluation_seconds_with_warning": null,
+    "mean_evaluation_seconds_without_warning": null,
+    "median_evaluation_seconds_without_warning": null,
+    "retry_time_seconds": null,
+    "retry_share_of_campaign_runtime_percent": null,
+    "reason": "WorkerEvaluation elapsed_seconds is transient and is not persisted in checkpoints or seed results. Modal stderr has second-resolution warning timestamps but no evaluation start/end or evaluation identifier, so a causal duration comparison is not available."
+  },
+  "controlled_evidence_check": {
+    "source": "docs/evidence/phase12/nine_story_pushover.json",
+    "published_design_evaluations": 3,
+    "solver_attempts": 1260,
+    "failed_solver_attempts": 0,
+    "use": "The controlled published-design cases verify successful paths but provide no warning-bearing sample for estimating retry cost or recovery."
+  },
+  "conclusion": "Convergence fallback activity is frequent enough to be visible operationally: approximately 10.22 failed solver attempts were logged per 100 committed structural executions. The evidence does not support a recovery percentage or a runtime slowdown percentage. It therefore establishes nonzero retry work but cannot establish whether retries are a material share of total campaign runtime."
+}

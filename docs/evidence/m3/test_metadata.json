@@ -1,0 +1,26 @@
+{
+  "milestone": "Phase 1 / M3 clean-restart rerun",
+  "date": "2026-10-27",
+  "validation_layer": "automated software tests (layer 1)",
+  "commands": [
+    "uv run --frozen --offline --no-sync pytest",
+    "uv run --frozen --offline --no-sync ruff check .",
+    "uv run --frozen --offline --no-sync ruff format --check .",
+    "uv run --frozen --offline --no-sync mypy"
+  ],
+  "results": {
+    "tests_collected": 40,
+    "tests_passed": 40,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "tests_xfailed": 0,
+    "pytest_seconds": 2.50,
+    "ruff_lint": "pass",
+    "ruff_format": "pass",
+    "mypy_strict": "pass",
+    "mypy_source_files": 28
+  },
+  "network": "no network used during M3",
+  "structural_evaluations": 0
+}
+

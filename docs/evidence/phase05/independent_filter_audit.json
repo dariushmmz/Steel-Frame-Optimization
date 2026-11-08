@@ -1,0 +1,669 @@
+{
+  "audit_kind": "independent_diagnostic_not_production_evaluation",
+  "disposition": "implementation_reproduced_at_section_level_reference_counts_still_disagree",
+  "equation_interpretation": {
+    "beam": "Compact preliminary assumption evaluated as phi_b Fy Zx with phi_b=0.9; ordered by capacity, equivalent to ordering by Zx.",
+    "boundary": "Reject capacity < demand; retain the first capacity >= demand.",
+    "column": "REF-A Eq. (14) lambda_c; both Eq. (13) Fcr branches; Eq. (15) Pn=AgFcr; Eq. (12) Pu<=phi_c Pn with phi_c=0.9."
+  },
+  "frozen_inputs": {
+    "domain_label": "273-section domain, pending client confirmation",
+    "frame_sha256": "f68f4ad7e865b711c792984f7a863b46e813e19fe5cac9267b0349ec2ead96b7",
+    "implementation_evidence_sha256": "ed00f76583c45fd11b31941424baa73f250830c53e79595c6b90dd1089cd85dd",
+    "policy_sha256": "9d0f4528d00ec319a4fd5f840358ec1cdc7e65f907922ca3c3308609da4a19a7",
+    "published_removed_counts": {
+      "1": 16,
+      "2": 32,
+      "3": 42,
+      "4": 42,
+      "5": 38
+    },
+    "published_section_count": 274,
+    "registered_assumption": "ASM-028: K=1.0, one story, major-axis rx",
+    "section_count": 273,
+    "sections_sha256": "13f75d47cca20b3028c377ba46466fca5a0833c1ec578fb40c9b099d30fdb8cf",
+    "workbook_sha256": "492cb5dfc59d609bd02da84f069e794244ba8b0e8e80bd481e73eff327658584"
+  },
+  "groups": [
+    {
+      "compression_branch_counts": {
+        "inelastic_lambda_le_1_5": 273
+      },
+      "demand": 426110.4,
+      "group_id": "1",
+      "implementation_decision_mismatch_count": 0,
+      "implementation_decisions_compared": 273,
+      "implementation_removed_count": 3,
+      "independent_first_retained": {
+        "capacity_minus_demand": 73293.19212461932,
+        "capacity_rank": 4,
+        "design_capacity": 499403.59212461935,
+        "independent_removed": false,
+        "section_name": "W8X10",
+        "source_row_id": 264
+      },
+      "independent_last_rejected": {
+        "capacity_minus_demand": -5787.429279392585,
+        "capacity_rank": 3,
+        "design_capacity": 420322.97072060744,
+        "independent_removed": true,
+        "section_name": "W4X13",
+        "source_row_id": 274
+      },
+      "independent_removed_count": 3,
+      "maximum_recorded_capacity_relative_difference": 0.0,
+      "member_type": "column",
+      "published_count_partition_boundary": {
+        "first_count_partition_retained": {
+          "capacity_minus_demand": 479616.1235413215,
+          "capacity_rank": 17,
+          "design_capacity": 905726.5235413215,
+          "independent_removed": false,
+          "section_name": "W8X18",
+          "source_row_id": 261
+        },
+        "last_count_partition_removed": {
+          "capacity_minus_demand": 470683.6890539294,
+          "capacity_rank": 16,
+          "design_capacity": 896794.0890539294,
+          "independent_removed": false,
+          "section_name": "W10X17",
+          "source_row_id": 249
+        },
+        "warning": "Rank partition only; REF-A does not publish section identities and this does not infer its K procedure."
+      },
+      "published_removed_count": 16,
+      "recorded_capacity_values_compared": 4,
+      "sections_between_independent_and_published_count_boundaries": [
+        {
+          "capacity_minus_demand": 73293.19212461932,
+          "capacity_rank": 4,
+          "design_capacity": 499403.59212461935,
+          "independent_removed": false,
+          "section_name": "W8X10",
+          "source_row_id": 264
+        },
+        {
+          "capacity_minus_demand": 107538.76491043286,
+          "capacity_rank": 5,
+          "design_capacity": 533649.1649104329,
+          "independent_removed": false,
+          "section_name": "W6X12",
+          "source_row_id": 269
+        },
+        {
+          "capacity_minus_demand": 204701.40652594506,
+          "capacity_rank": 6,
+          "design_capacity": 630811.8065259451,
+          "independent_removed": false,
+          "section_name": "W10X12",
+          "source_row_id": 251
+        },
+        {
+          "capacity_minus_demand": 211174.3917177458,
+          "capacity_rank": 7,
+          "design_capacity": 637284.7917177458,
+          "independent_removed": false,
+          "section_name": "W5X16",
+          "source_row_id": 273
+        },
+        {
+          "capacity_minus_demand": 221070.73086927983,
+          "capacity_rank": 8,
+          "design_capacity": 647181.1308692798,
+          "independent_removed": false,
+          "section_name": "W8X13",
+          "source_row_id": 263
+        },
+        {
+          "capacity_minus_demand": 250217.94128703861,
+          "capacity_rank": 9,
+          "design_capacity": 676328.3412870386,
+          "independent_removed": false,
+          "section_name": "W6X15",
+          "source_row_id": 267
+        },
+        {
+          "capacity_minus_demand": 303572.69454322744,
+          "capacity_rank": 10,
+          "design_capacity": 729683.0945432275,
+          "independent_removed": false,
+          "section_name": "W6X16",
+          "source_row_id": 268
+        },
+        {
+          "capacity_minus_demand": 328429.6848791051,
+          "capacity_rank": 11,
+          "design_capacity": 754540.0848791051,
+          "independent_removed": false,
+          "section_name": "W8X15",
+          "source_row_id": 262
+        },
+        {
+          "capacity_minus_demand": 337043.5675913625,
+          "capacity_rank": 12,
+          "design_capacity": 763153.9675913625,
+          "independent_removed": false,
+          "section_name": "W5X19",
+          "source_row_id": 272
+        },
+        {
+          "capacity_minus_demand": 340543.209474841,
+          "capacity_rank": 13,
+          "design_capacity": 766653.609474841,
+          "independent_removed": false,
+          "section_name": "W12X14",
+          "source_row_id": 233
+        },
+        {
+          "capacity_minus_demand": 362048.6997007596,
+          "capacity_rank": 14,
+          "design_capacity": 788159.0997007596,
+          "independent_removed": false,
+          "section_name": "W10X15",
+          "source_row_id": 250
+        },
+        {
+          "capacity_minus_demand": 443447.0212086574,
+          "capacity_rank": 15,
+          "design_capacity": 869557.4212086574,
+          "independent_removed": false,
+          "section_name": "W12X16",
+          "source_row_id": 232
+        },
+        {
+          "capacity_minus_demand": 470683.6890539294,
+          "capacity_rank": 16,
+          "design_capacity": 896794.0890539294,
+          "independent_removed": false,
+          "section_name": "W10X17",
+          "source_row_id": 249
+        }
+      ],
+      "slenderness_range": {
+        "maximum": 1.1990597599849242,
+        "minimum": 0.11586420152663311
+      }
+    },
+    {
+      "compression_branch_counts": {
+        "inelastic_lambda_le_1_5": 273
+      },
+      "demand": 852220.8,
+      "group_id": "2",
+      "implementation_decision_mismatch_count": 0,
+      "implementation_decisions_compared": 273,
+      "implementation_removed_count": 14,
+      "independent_first_retained": {
+        "capacity_minus_demand": 17336.621208657394,
+        "capacity_rank": 15,
+        "design_capacity": 869557.4212086574,
+        "independent_removed": false,
+        "section_name": "W12X16",
+        "source_row_id": 232
+      },
+      "independent_last_rejected": {
+        "capacity_minus_demand": -64061.700299240416,
+        "capacity_rank": 14,
+        "design_capacity": 788159.0997007596,
+        "independent_removed": true,
+        "section_name": "W10X15",
+        "source_row_id": 250
+      },
+      "independent_removed_count": 14,
+      "maximum_recorded_capacity_relative_difference": 0.0,
+      "member_type": "column",
+      "published_count_partition_boundary": {
+        "first_count_partition_retained": {
+          "capacity_minus_demand": 761690.6295103864,
+          "capacity_rank": 33,
+          "design_capacity": 1613911.4295103864,
+          "independent_removed": false,
+          "section_name": "W10X30",
+          "source_row_id": 245
+        },
+        "last_count_partition_removed": {
+          "capacity_minus_demand": 725348.6668156539,
+          "capacity_rank": 32,
+          "design_capacity": 1577569.466815654,
+          "independent_removed": false,
+          "section_name": "W8X31",
+          "source_row_id": 257
+        },
+        "warning": "Rank partition only; REF-A does not publish section identities and this does not infer its K procedure."
+      },
+      "published_removed_count": 32,
+      "recorded_capacity_values_compared": 15,
+      "sections_between_independent_and_published_count_boundaries": [
+        {
+          "capacity_minus_demand": 17336.621208657394,
+          "capacity_rank": 15,
+          "design_capacity": 869557.4212086574,
+          "independent_removed": false,
+          "section_name": "W12X16",
+          "source_row_id": 232
+        },
+        {
+          "capacity_minus_demand": 44573.28905392939,
+          "capacity_rank": 16,
+          "design_capacity": 896794.0890539294,
+          "independent_removed": false,
+          "section_name": "W10X17",
+          "source_row_id": 249
+        },
+        {
+          "capacity_minus_demand": 53505.723541321466,
+          "capacity_rank": 17,
+          "design_capacity": 905726.5235413215,
+          "independent_removed": false,
+          "section_name": "W8X18",
+          "source_row_id": 261
+        },
+        {
+          "capacity_minus_demand": 62093.55975547619,
+          "capacity_rank": 18,
+          "design_capacity": 914314.3597554762,
+          "independent_removed": false,
+          "section_name": "W6X20",
+          "source_row_id": 266
+        },
+        {
+          "capacity_minus_demand": 162521.2528231677,
+          "capacity_rank": 19,
+          "design_capacity": 1014742.0528231678,
+          "independent_removed": false,
+          "section_name": "W10X19",
+          "source_row_id": 248
+        },
+        {
+          "capacity_minus_demand": 181265.57609711424,
+          "capacity_rank": 20,
+          "design_capacity": 1033486.3760971143,
+          "independent_removed": false,
+          "section_name": "W12X19",
+          "source_row_id": 231
+        },
+        {
+          "capacity_minus_demand": 213963.45414262614,
+          "capacity_rank": 21,
+          "design_capacity": 1066184.2541426262,
+          "independent_removed": false,
+          "section_name": "W8X21",
+          "source_row_id": 260
+        },
+        {
+          "capacity_minus_demand": 299552.99552096636,
+          "capacity_rank": 22,
+          "design_capacity": 1151773.7955209664,
+          "independent_removed": false,
+          "section_name": "W6X25",
+          "source_row_id": 265
+        },
+        {
+          "capacity_minus_demand": 326928.9251602206,
+          "capacity_rank": 23,
+          "design_capacity": 1179149.7251602206,
+          "independent_removed": false,
+          "section_name": "W10X22",
+          "source_row_id": 247
+        },
+        {
+          "capacity_minus_demand": 353462.9475558165,
+          "capacity_rank": 24,
+          "design_capacity": 1205683.7475558165,
+          "independent_removed": false,
+          "section_name": "W12X22",
+          "source_row_id": 230
+        },
+        {
+          "capacity_minus_demand": 365814.07587909675,
+          "capacity_rank": 25,
+          "design_capacity": 1218034.8758790968,
+          "independent_removed": false,
+          "section_name": "W8X24",
+          "source_row_id": 259
+        },
+        {
+          "capacity_minus_demand": 374603.60824788315,
+          "capacity_rank": 26,
+          "design_capacity": 1226824.4082478832,
+          "independent_removed": false,
+          "section_name": "W14X22",
+          "source_row_id": 204
+        },
+        {
+          "capacity_minus_demand": 535347.239315639,
+          "capacity_rank": 27,
+          "design_capacity": 1387568.039315639,
+          "independent_removed": false,
+          "section_name": "W10X26",
+          "source_row_id": 246
+        },
+        {
+          "capacity_minus_demand": 570845.1459662414,
+          "capacity_rank": 28,
+          "design_capacity": 1423065.9459662414,
+          "independent_removed": false,
+          "section_name": "W8X28",
+          "source_row_id": 258
+        },
+        {
+          "capacity_minus_demand": 581499.3848859845,
+          "capacity_rank": 29,
+          "design_capacity": 1433720.1848859845,
+          "independent_removed": false,
+          "section_name": "W12X26",
+          "source_row_id": 229
+        },
+        {
+          "capacity_minus_demand": 604698.1880626401,
+          "capacity_rank": 30,
+          "design_capacity": 1456918.9880626402,
+          "independent_removed": false,
+          "section_name": "W14X26",
+          "source_row_id": 203
+        },
+        {
+          "capacity_minus_demand": 617925.2900921355,
+          "capacity_rank": 31,
+          "design_capacity": 1470146.0900921356,
+          "independent_removed": false,
+          "section_name": "W16X26",
+          "source_row_id": 168
+        },
+        {
+          "capacity_minus_demand": 725348.6668156539,
+          "capacity_rank": 32,
+          "design_capacity": 1577569.466815654,
+          "independent_removed": false,
+          "section_name": "W8X31",
+          "source_row_id": 257
+        }
+      ],
+      "slenderness_range": {
+        "maximum": 1.1990597599849242,
+        "minimum": 0.11586420152663311
+      }
+    },
+    {
+      "compression_branch_counts": {
+        "compact_phi_b_fy_zx": 273
+      },
+      "demand": 215386.407936,
+      "group_id": "3",
+      "implementation_decision_mismatch_count": 0,
+      "implementation_decisions_compared": 273,
+      "implementation_removed_count": 45,
+      "independent_first_retained": {
+        "capacity_minus_demand": 3337.634615039977,
+        "capacity_rank": 46,
+        "design_capacity": 218724.04255103998,
+        "independent_removed": false,
+        "section_name": "W8X58",
+        "source_row_id": 253
+      },
+      "independent_last_rejected": {
+        "capacity_minus_demand": -6903.6249024000135,
+        "capacity_rank": 45,
+        "design_capacity": 208482.7830336,
+        "independent_removed": true,
+        "section_name": "W12X40",
+        "source_row_id": 226
+      },
+      "independent_removed_count": 45,
+      "maximum_recorded_capacity_relative_difference": 0.0,
+      "member_type": "beam",
+      "published_count_partition_boundary": {
+        "first_count_partition_retained": {
+          "capacity_minus_demand": -15681.847345920018,
+          "capacity_rank": 43,
+          "design_capacity": 199704.56059008,
+          "independent_removed": true,
+          "section_name": "W14X34",
+          "source_row_id": 201
+        },
+        "last_count_partition_removed": {
+          "capacity_minus_demand": -17876.40295680001,
+          "capacity_rank": 42,
+          "design_capacity": 197510.0049792,
+          "independent_removed": true,
+          "section_name": "W16X31",
+          "source_row_id": 167
+        },
+        "warning": "Rank partition only; REF-A does not publish section identities and this does not infer its K procedure."
+      },
+      "published_removed_count": 42,
+      "recorded_capacity_values_compared": 46,
+      "sections_between_independent_and_published_count_boundaries": [
+        {
+          "capacity_minus_demand": -15681.847345920018,
+          "capacity_rank": 43,
+          "design_capacity": 199704.56059008,
+          "independent_removed": true,
+          "section_name": "W14X34",
+          "source_row_id": 201
+        },
+        {
+          "capacity_minus_demand": -14584.569540480006,
+          "capacity_rank": 44,
+          "design_capacity": 200801.83839552,
+          "independent_removed": true,
+          "section_name": "W10X45",
+          "source_row_id": 242
+        },
+        {
+          "capacity_minus_demand": -6903.6249024000135,
+          "capacity_rank": 45,
+          "design_capacity": 208482.7830336,
+          "independent_removed": true,
+          "section_name": "W12X40",
+          "source_row_id": 226
+        }
+      ],
+      "slenderness_range": null
+    },
+    {
+      "compression_branch_counts": {
+        "compact_phi_b_fy_zx": 273
+      },
+      "demand": 215386.407936,
+      "group_id": "4",
+      "implementation_decision_mismatch_count": 0,
+      "implementation_decisions_compared": 273,
+      "implementation_removed_count": 45,
+      "independent_first_retained": {
+        "capacity_minus_demand": 3337.634615039977,
+        "capacity_rank": 46,
+        "design_capacity": 218724.04255103998,
+        "independent_removed": false,
+        "section_name": "W8X58",
+        "source_row_id": 253
+      },
+      "independent_last_rejected": {
+        "capacity_minus_demand": -6903.6249024000135,
+        "capacity_rank": 45,
+        "design_capacity": 208482.7830336,
+        "independent_removed": true,
+        "section_name": "W12X40",
+        "source_row_id": 226
+      },
+      "independent_removed_count": 45,
+      "maximum_recorded_capacity_relative_difference": 0.0,
+      "member_type": "beam",
+      "published_count_partition_boundary": {
+        "first_count_partition_retained": {
+          "capacity_minus_demand": -15681.847345920018,
+          "capacity_rank": 43,
+          "design_capacity": 199704.56059008,
+          "independent_removed": true,
+          "section_name": "W14X34",
+          "source_row_id": 201
+        },
+        "last_count_partition_removed": {
+          "capacity_minus_demand": -17876.40295680001,
+          "capacity_rank": 42,
+          "design_capacity": 197510.0049792,
+          "independent_removed": true,
+          "section_name": "W16X31",
+          "source_row_id": 167
+        },
+        "warning": "Rank partition only; REF-A does not publish section identities and this does not infer its K procedure."
+      },
+      "published_removed_count": 42,
+      "recorded_capacity_values_compared": 46,
+      "sections_between_independent_and_published_count_boundaries": [
+        {
+          "capacity_minus_demand": -15681.847345920018,
+          "capacity_rank": 43,
+          "design_capacity": 199704.56059008,
+          "independent_removed": true,
+          "section_name": "W14X34",
+          "source_row_id": 201
+        },
+        {
+          "capacity_minus_demand": -14584.569540480006,
+          "capacity_rank": 44,
+          "design_capacity": 200801.83839552,
+          "independent_removed": true,
+          "section_name": "W10X45",
+          "source_row_id": 242
+        },
+        {
+          "capacity_minus_demand": -6903.6249024000135,
+          "capacity_rank": 45,
+          "design_capacity": 208482.7830336,
+          "independent_removed": true,
+          "section_name": "W12X40",
+          "source_row_id": 226
+        }
+      ],
+      "slenderness_range": null
+    },
+    {
+      "compression_branch_counts": {
+        "compact_phi_b_fy_zx": 273
+      },
+      "demand": 192643.743744,
+      "group_id": "5",
+      "implementation_decision_mismatch_count": 0,
+      "implementation_decisions_compared": 273,
+      "implementation_removed_count": 41,
+      "independent_first_retained": {
+        "capacity_minus_demand": 4866.261235199985,
+        "capacity_rank": 42,
+        "design_capacity": 197510.0049792,
+        "independent_removed": false,
+        "section_name": "W16X31",
+        "source_row_id": 167
+      },
+      "independent_last_rejected": {
+        "capacity_minus_demand": -5374.998282240005,
+        "capacity_rank": 41,
+        "design_capacity": 187268.74546176,
+        "independent_removed": true,
+        "section_name": "W12X35",
+        "source_row_id": 227
+      },
+      "independent_removed_count": 41,
+      "maximum_recorded_capacity_relative_difference": 0.0,
+      "member_type": "beam",
+      "published_count_partition_boundary": {
+        "first_count_partition_retained": {
+          "capacity_minus_demand": -19639.60975296001,
+          "capacity_rank": 39,
+          "design_capacity": 173004.13399104,
+          "independent_removed": true,
+          "section_name": "W14X30",
+          "source_row_id": 202
+        },
+        "last_count_partition_removed": {
+          "capacity_minus_demand": -21468.406095360027,
+          "capacity_rank": 38,
+          "design_capacity": 171175.33764863998,
+          "independent_removed": true,
+          "section_name": "W10X39",
+          "source_row_id": 243
+        },
+        "warning": "Rank partition only; REF-A does not publish section identities and this does not infer its K procedure."
+      },
+      "published_removed_count": 38,
+      "recorded_capacity_values_compared": 42,
+      "sections_between_independent_and_published_count_boundaries": [
+        {
+          "capacity_minus_demand": -19639.60975296001,
+          "capacity_rank": 39,
+          "design_capacity": 173004.13399104,
+          "independent_removed": true,
+          "section_name": "W14X30",
+          "source_row_id": 202
+        },
+        {
+          "capacity_minus_demand": -13421.702188800002,
+          "capacity_rank": 40,
+          "design_capacity": 179222.0415552,
+          "independent_removed": true,
+          "section_name": "W8X48",
+          "source_row_id": 254
+        },
+        {
+          "capacity_minus_demand": -5374.998282240005,
+          "capacity_rank": 41,
+          "design_capacity": 187268.74546176,
+          "independent_removed": true,
+          "section_name": "W12X35",
+          "source_row_id": 227
+        }
+      ],
+      "slenderness_range": null
+    }
+  ],
+  "independent_counts_match_published": false,
+  "independent_demand_reconstruction": {
+    "beam_inflection_model": {
+      "derived_end_moment_magnitude_coefficient": 0.045000000000000005,
+      "derived_midspan_coefficient": 0.08,
+      "governing_location": "midspan",
+      "maximum_demands_nm": {
+        "G3": 215386.407936,
+        "G4": 215386.407936,
+        "G5": 192643.743744
+      },
+      "zero_moment_fraction": 0.1
+    },
+    "column_tributary_model": {
+      "accumulated_bottom_story_demands_n": {
+        "G1": 426110.4,
+        "G2": 852220.8
+      },
+      "exterior_reaction_multiplier": 0.5,
+      "interior_reaction_multiplier": 1.0,
+      "span_m": 9.144
+    },
+    "factored_uniform_loads_n_per_m": {
+      "floor_1": 32200.0,
+      "floor_2": 32200.0,
+      "roof": 28800.0
+    }
+  },
+  "network_used": false,
+  "phase_status": "blocked",
+  "production_modules_imported": false,
+  "python": "3.12.6",
+  "schema_version": "1.0",
+  "section_level_implementation_decision_mismatches": 0,
+  "section_level_rows": 1365,
+  "source_data_verification": {
+    "maximum_relative_conversion_error": {
+      "area_m2": 0.0,
+      "rx_m": 0.0,
+      "zx_m3": 0.0
+    },
+    "name_mismatch_count": 0,
+    "processed_rows_checked": 273,
+    "sheet": "Database v14.1",
+    "status": "pass",
+    "workbook_sha256": "492cb5dfc59d609bd02da84f069e794244ba8b0e8e80bd481e73eff327658584",
+    "workbook_w_rows": 273
+  },
+  "validation_status": "not engineering-validated"
+}

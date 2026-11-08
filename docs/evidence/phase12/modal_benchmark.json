@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "phase12-nine-story-case2-one-epoch-modal-v1",
+  "date": "2026-11-04",
+  "modal": {
+    "profile": "amiromo138411",
+    "remote_probe_app_id": "ap-6mpmtqNRQD2l2XDQ86QDS4",
+    "benchmark_app_id": "ap-UENMfuuHVN4d4nWuIraUc5",
+    "recovery_benchmark_app_id": "ap-93x1se4HQgl5cdaiMRcYJw",
+    "post_guard_probe_app_id": "ap-j36GGRBIYqoMnB8qb0NYP6",
+    "budget_guard_test_app_id": "ap-Jvrf45IEqiZD1q1Brd0kux",
+    "volume": "steel-frame-phase12-v1",
+    "remote_checkpoint_path": "case2/checkpoints/seed_00.json",
+    "remote_log_path": "case2/logs/seed_00.log",
+    "result_file_expected": false,
+    "result_file_reason": "bounded partial run persists a resumable checkpoint; final result is written only at 200 epochs"
+  },
+  "proxy": {
+    "url": "socks5h://127.0.0.1:10808",
+    "modal_version": "1.5.2",
+    "installed_packages": [
+      {"name": "python-socks", "version": "3.2.1", "download_size_bytes": 49000},
+      {"name": "aiohttp-socks", "version": "0.12.0", "download_size_bytes": 10000}
+    ],
+    "authenticated_api_probes_passed": 3
+  },
+  "identity": {
+    "backend_sha256": "034850b6e0fbeb7ac223e5c917b80d2e200d1240e7ca9c37f254b31eb2c72f84",
+    "campaign_sha256": "fc697f27fd62e822030de6a28b1a8455e723ea5fea92a4893ed388d917ba1db8",
+    "implementation_sha256": "71d3b04bbb67899d7417c537022c120a70e901f955155dc9712f3529528746cc",
+    "checkpoint_sha256": "71ef3c638e959c4535befa99838bd18e454be1fd509309d9cc6810f8d303bc8a",
+    "log_sha256": "9b21675bdf9ae54370db6003e64ece96e01f4ba6c1dcadb4a2f85e2b4e75ae34"
+  },
+  "execution": {
+    "seed": 0,
+    "completed_epochs": 1,
+    "evaluation_requests": 100,
+    "structural_executions": 100,
+    "cache_hits": 0,
+    "returned_elapsed_seconds": 82.342907438,
+    "durable_log_elapsed_seconds": 79.832756845,
+    "champion_status": "stage1_infeasible",
+    "status_counts": {
+      "numerical_failure": 1,
+      "stage1_infeasible": 56,
+      "stage2_infeasible": 42,
+      "structural_failure": 1
+    }
+  },
+  "local_comparison": {
+    "local_pilot_requests": 200,
+    "local_pilot_structural_executions": 198,
+    "local_pilot_elapsed_seconds": 73.107201900013,
+    "local_checkpoint_sha256": "e4fcbd400fd920de1e5838842f8bc6a235bab2f32bca655a09e201f1e0b3d91d",
+    "history_equal_for_first_epoch": true,
+    "cache_keys_and_statuses_equal_for_first_epoch": true,
+    "local_seconds_per_request": 0.365536009500065,
+    "cloud_seconds_per_request": 0.82342907438,
+    "cloud_to_local_wall_time_ratio": 2.2526619894608593
+  },
+  "recovery_benchmark": {
+    "maximum_epochs": 10,
+    "evaluation_requests": 1000,
+    "structural_executions": 975,
+    "cache_hits": 25,
+    "cache_hit_fraction": 0.025,
+    "initial_run_seconds": 82.342907438,
+    "resume_run_seconds": 449.927476119,
+    "combined_seconds": 532.270383557,
+    "combined_seconds_per_request": 0.532270383557,
+    "combined_seconds_per_structural_execution": 0.545918342109744,
+    "checkpoint_sha256": "0b47db11d3ddced97e162b312450ec6d8ecd3c8bd036920a35a9dfa9cc42dc52",
+    "log_sha256": "d3b0c0bf9e2b9b8061e0661ca68c77bd16dffe4cb3cc791ccc95b497ea81603b",
+    "campaign_identity_equal": true,
+    "evaluator_identity_equal": true,
+    "first_two_epochs_equal_to_windows_pilot": true,
+    "windows_pilot_cache_is_subset": true,
+    "duplicate_tasks_observed": 0,
+    "estimated_combined_compute_cost_usd": 0.0296634284756316
+  },
+  "projection": {
+    "projected_hours_per_20000_request_seed": 4.574605968777778,
+    "configured_seed_timeout_hours": 3.0,
+    "projected_wall_hours_per_30_seed_campaign_at_four_seed_concurrency": 34.30954476583334,
+    "projected_wall_hours_for_three_campaigns": 102.9286342975,
+    "projected_cost_per_seed_usd": 0.917794046303948,
+    "projected_cost_for_90_seeds_usd": 82.60146416735532,
+    "estimated_benchmark_compute_cost_usd": 0.00458897023151974,
+    "actual_billing_available": false,
+    "recovery_based_hours_per_20000_request_seed": 2.95705768642778,
+    "revised_seed_timeout_hours": 4.0,
+    "recovery_based_cost_for_90_seeds_usd": 53.3941712561369,
+    "phase9_cache_fraction_sensitivity_cost_for_90_seeds_usd": 38.4244536218437,
+    "cost_contingency_factor": 1.2,
+    "required_authorized_budget_usd": 64.0730055073643,
+    "owner_approved_estimate_usd": 64.11,
+    "current_authorized_budget_usd": 75.0,
+    "authorization_date": "2026-11-04",
+    "authorization_source": "project owner"
+  },
+  "gate": {
+    "remote_import_probe_passed": true,
+    "checkpoint_integrity_passed": true,
+    "linux_windows_first_epoch_disposition_match": true,
+    "post_guard_remote_identity_unchanged": true,
+    "production_submission_negative_control_passed": true,
+    "production_tasks_started_by_negative_control": 0,
+    "full_campaign_ready": true,
+    "blocking_reason": null,
+    "authorization_disposition": "the owner lifted the former USD 10 ceiling, approved USD 64.11 estimated compute and additional justified expenses; USD 75 is retained as the hard execution cap"
+  }
+}

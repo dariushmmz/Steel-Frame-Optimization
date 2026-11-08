@@ -1,0 +1,33 @@
+{
+  "milestone": "Phase 1 / M2 clean-restart rerun",
+  "date": "2026-10-27",
+  "validation_layer": "automated software tests (layer 1)",
+  "environment": {
+    "os": "Windows",
+    "python": "3.12.6",
+    "uv": "0.6.14",
+    "openseespy": "3.8.0.0",
+    "numpy": "2.5.4",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1",
+    "ruff": "0.17.2",
+    "mypy": "2.4.0"
+  },
+  "results": {
+    "clean_offline_sync_exit": 0,
+    "clean_offline_packages_installed": 33,
+    "tests_collected": 23,
+    "tests_passed": 23,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "tests_xfailed": 0,
+    "ruff_lint": "pass",
+    "ruff_format": "pass",
+    "mypy_strict": "pass",
+    "cli_help": "pass",
+    "cli_version": "pass"
+  },
+  "network": "no network used during M2; all packages reused from the local uv cache",
+  "structural_evaluations": 0
+}
+

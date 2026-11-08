@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "source": "REF-A Tables 4 and 5, GWO designs and inter-story drift percentages",
+  "designs": [
+    {
+      "design_id": "case1_gwo",
+      "sections_by_group": {"1": "W18X46", "2": "W18X55", "3": "W18X40", "4": "W18X35", "5": "W16X36"},
+      "published_story_drift_percent": {
+        "OP": [0.28, 0.46, 0.39],
+        "IO": [0.50, 0.82, 0.69],
+        "LS_PAPER_SENSITIVITY": [2.15, 2.86, 2.44],
+        "CP": [4.99, 5.44, 4.47]
+      }
+    },
+    {
+      "design_id": "case2_gwo",
+      "sections_by_group": {"1": "W16X57", "2": "W18X71", "3": "W24X55", "4": "W18X55", "5": "W16X45"},
+      "published_story_drift_percent": {
+        "OP": [0.28, 0.45, 0.41],
+        "IO": [0.50, 0.79, 0.72],
+        "LS_PAPER_SENSITIVITY": [2.38, 2.74, 2.33],
+        "CP": [5.14, 5.37, 4.39]
+      }
+    },
+    {
+      "design_id": "case3_gwo",
+      "sections_by_group": {"1": "W16X77", "2": "W16X89", "3": "W21X68", "4": "W21X62", "5": "W21X44"},
+      "published_story_drift_percent": {
+        "OP": [0.31, 0.45, 0.38],
+        "IO": [0.54, 0.80, 0.68],
+        "LS_PAPER_SENSITIVITY": [2.46, 2.76, 2.23],
+        "CP": [5.14, 5.39, 4.37]
+      }
+    }
+  ],
+  "comparison_policy": "diagnostic only; do not tune model inputs to Table 5"
+}

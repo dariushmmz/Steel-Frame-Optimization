@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "compatibility_id": "phase11-nine-story-extension-v1",
+  "change_scope": "nine_story_extension_with_exact_three_story_regression",
+  "structural_calculation_code_changed": true,
+  "three_story_configuration_changed": false,
+  "three_story_frozen_evidence_changed": false,
+  "frozen_phase10_implementation_sha256": "ebdd49acf077252b3c929157262b9e091ca128c401fe9d7bea52cbd8a68adce6",
+  "handover_runtime_implementation_sha256": "f375c31a3788b2545f2d6707170ce874245145314b675a3045bfbee32cfc1ce5",
+  "phase11_implementation_sha256": "aa20111933b6f690ab4b3fb597dad16f4bfda6557f818add0e03e4e2670a8e26",
+  "changed_structural_modules": [
+    "src/steel_frame_optimization/models/frame.py",
+    "src/steel_frame_optimization/validation/phase5.py",
+    "src/steel_frame_optimization/validation/phase11.py"
+  ],
+  "verification_required": [
+    "canonical Phase 3 three-story evidence equality",
+    "canonical Phase 5 three-story Stage 1 evidence equality",
+    "Phase 8 representative evaluator regressions",
+    "Phase 9 and Phase 10 immutable evidence regressions",
+    "full locked regression suite"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "DEC-011",
+  "title": "Benchmark scope",
+  "owner": "Client",
+  "blocking_phases": ["Phase 1"],
+  "status": "awaiting_owner",
+  "recommendation": "Option A",
+  "options": [
+    {"option_id": "A", "summary": "Full published case set", "tradeoffs": ["More coverage", "More runtime"]},
+    {"option_id": "B", "summary": "Principal cases only", "tradeoffs": ["Less runtime", "Less coverage"]}
+  ],
+  "selected_option_id": null
+}
+

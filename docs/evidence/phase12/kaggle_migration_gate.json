@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "recorded_date": "2026-11-06",
+  "source_project_commit": "cf628c32f61b72b76fe5627ade9c40adcb25357f",
+  "migration_gate_passed": true,
+  "kaggle": {
+    "cli_version": "2.2.4",
+    "authentication_passed": true,
+    "private_cpu_kernel_execution_passed": true,
+    "output_retrieval_passed": true,
+    "observed_cpu_count": 4,
+    "default_python_version": "3.13.18",
+    "managed_runtime_kernel": "dariushmzx/steel-frame-phase-12-python-runtime/4",
+    "compatibility_kernel": "dariushmzx/steel-frame-phase-12-compatibility/4",
+    "cross_session_persistence_kernel": "dariushmzx/steel-frame-phase-12-persistence/1"
+  },
+  "colab": {
+    "cli_version": "0.7.5",
+    "authentication_passed": true,
+    "cpu_execution_passed": true,
+    "observed_cpu_count": 2,
+    "durable_drive_gate_passed": false,
+    "blocking_condition": "Google Drive mount requires interactive browser consent; observed compute-unit balance was zero",
+    "production_selected": false
+  },
+  "runtime": {
+    "python_version": "3.12.6",
+    "uv_version": "0.6.14",
+    "opensees_version": "3.8.0",
+    "archive_size_bytes": 180564024,
+    "archive_sha256": "c382c0867130d68ba3ee81869f7cca382c09a34c3e0007712fe1fd2c731f755d",
+    "spawn_multiprocessing_passed": true,
+    "locked_sync_passed": true
+  },
+  "bounded_recovery_comparison": {
+    "campaign": "case1_no_filter",
+    "seed": 18,
+    "initial_completed_epochs": 26,
+    "final_completed_epochs": 27,
+    "final_evaluation_requests": 2700,
+    "checkpoint_state_gate_passed": true,
+    "cross_session_checkpoint_retrieval_passed": true,
+    "new_result_count": 96,
+    "new_result_difference_count_at_declared_tolerance": 0,
+    "new_history_difference_count": 0,
+    "maximum_absolute_difference": 1.4551915228366852e-11,
+    "maximum_relative_difference": 5.702042913572931e-15,
+    "relative_tolerance": 1e-8,
+    "absolute_tolerance": 1e-10,
+    "complete_result_sha256_difference_count": 13,
+    "hash_difference_disposition": "Preserved as cross-platform serialization evidence; the underlying numeric fields and GA history pass the unchanged tolerance",
+    "produced_checkpoint_sha256": "ff2ef2ad3b5057ce12c31b1ba35bbcf56b0df2e4ecc742e127d34116aefee27c",
+    "persistence_evidence_sha256": "d6c69953a09d3d558c9022f9006de84394e3210e64ac81457d017851549c4d58"
+  },
+  "recovery_transfer": {
+    "source": "Modal Volume steel-frame-phase12-v1",
+    "canonical_partial_checkpoint_count": 20,
+    "uncompressed_checkpoint_bytes": 1211330940,
+    "compressed_upload_bytes": 157964600,
+    "bundle_sha256": "29645abd19012ed3d7e358ce588e87abc28b5b62aa8f3c124d4ab683648b9341",
+    "manifest_sha256": "1a48f68c6a18093cdab6ac38dd6d1759530bbb78cff800f1a3050286d982d678",
+    "private_dataset": "dariushmzx/steel-frame-phase12-recovery-state/1",
+    "completed_seed_artifacts_transferred": false,
+    "historical_checkpoints_transferred": false,
+    "checkpoint_identity_gate_passed": true
+  },
+  "production_canary": {
+    "campaign": "case1_no_filter",
+    "seed": 6,
+    "resume_epoch": 191,
+    "kernel": "dariushmzx/steel-frame-phase-12-case1-no-filter-seed-06/1",
+    "status_at_record_creation": "RUNNING"
+  }
+}

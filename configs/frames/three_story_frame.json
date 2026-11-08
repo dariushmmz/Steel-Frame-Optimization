@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "frame_id": "3-story",
+  "domain_label": "273-section domain, pending client confirmation",
+  "story_heights_m": [3.9624, 3.9624, 3.9624],
+  "bay_widths_m": [9.144, 9.144, 9.144, 9.144],
+  "design_groups": ["1", "2", "3", "4", "5"],
+  "floors": [
+    {
+      "level": 1,
+      "dead_line_load_n_per_m": 13500.0,
+      "live_line_load_n_per_m": 10000.0,
+      "seismic_weight_n": 4688000.0
+    },
+    {
+      "level": 2,
+      "dead_line_load_n_per_m": 13500.0,
+      "live_line_load_n_per_m": 10000.0,
+      "seismic_weight_n": 4688000.0
+    },
+    {
+      "level": 3,
+      "dead_line_load_n_per_m": 14000.0,
+      "live_line_load_n_per_m": 7500.0,
+      "seismic_weight_n": 5071000.0
+    }
+  ],
+  "materials": [
+    {
+      "member_type": "beam",
+      "nominal_yield_strength_pa": 248000000.0,
+      "expected_yield_strength_pa": 339000000.0,
+      "elastic_modulus_pa": 200000000000.0,
+      "grade_label": "ASTM A36 equivalent",
+      "grade_label_status": "inferred_pending_layer4",
+      "assumption_id": "ASM-004"
+    },
+    {
+      "member_type": "column",
+      "nominal_yield_strength_pa": 345000000.0,
+      "expected_yield_strength_pa": 397000000.0,
+      "elastic_modulus_pa": 200000000000.0,
+      "grade_label": "ASTM A992 equivalent",
+      "grade_label_status": "inferred_pending_layer4",
+      "assumption_id": "ASM-004"
+    }
+  ],
+  "policy": {
+    "joint_model": "rigid_centerline_no_panel_zone_or_offset",
+    "base_support": "fixed_ux_uy_rz",
+    "floor_diaphragm": "equal_horizontal_translation_per_level",
+    "mass_distribution": "tributary_width_to_floor_nodes",
+    "rotational_mass": "zero",
+    "member_axial_deformation": "retained",
+    "member_shear_deformation": "neglected",
+    "modal_mass_source": "fixed_published_story_weights",
+    "candidate_member_mass_added_to_modal_mass": false,
+    "gravity_load_source": "published_line_loads_only",
+    "candidate_member_self_weight_added_to_gravity": false,
+    "objective_member_weight_accounting": "section_weight_times_member_length",
+    "mass_self_weight_assumption_id": "ASM-020"
+  },
+  "gravity_acceleration_m_per_s2": 9.80665,
+  "column_group_policy": "exterior_1_interior_2",
+  "beam_group_policy": "level_1_to_3_maps_group_3_to_5",
+  "beam_group_decision_id": "DEC-021"
+}

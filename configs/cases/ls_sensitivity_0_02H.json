@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "case_id": "ls_sensitivity_0_02H",
+  "frame_id": "unassigned_frame",
+  "variant_kind": "sensitivity",
+  "ls_target_ratio": 0.02,
+  "ls_target_decision": "DEC-001",
+  "performance_level_mapping": null,
+  "mapping_status": "awaiting_structural_engineer_DEC-002",
+  "solver_policy_id": "phase1_unimplemented"
+}
+

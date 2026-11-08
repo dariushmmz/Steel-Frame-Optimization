@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+outputs/runs/*
+!outputs/runs/.gitkeep
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+
+# Proprietary/external raw sources stay local; commit hashes, provenance, and the project subset.
+data/raw/aisc_v14_1/*.xls
+data/raw/aisc_v15_0/*.xlsx
+data/raw/aisc_v16_0/*.xlsx
+data/raw/references/*.pdf
+docs/client_inputs/*.pdf
+
+# The normalized project subset inherits unresolved redistribution terms from the source workbook.
+data/processed/aisc_v14_1_w_shapes.json

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "domain_label": "273-section domain, pending client confirmation",
+  "deviation_id": "DEV-001",
+  "operator_order": "ascending_weight_then_source_row",
+  "column_filter_order": "ascending_axial_capacity_then_source_row",
+  "frames": [
+    {
+      "frame_id": "3-story",
+      "groups": [
+        {"group_id": "1", "member_type": "column", "base_family": "all_w", "published_removed_count": 16},
+        {"group_id": "2", "member_type": "column", "base_family": "all_w", "published_removed_count": 32},
+        {"group_id": "3", "member_type": "beam", "base_family": "all_w", "published_removed_count": 42},
+        {"group_id": "4", "member_type": "beam", "base_family": "all_w", "published_removed_count": 42},
+        {"group_id": "5", "member_type": "beam", "base_family": "all_w", "published_removed_count": 38}
+      ]
+    },
+    {
+      "frame_id": "9-story",
+      "groups": [
+        {"group_id": "1", "member_type": "column", "base_family": "w14", "published_removed_count": 6},
+        {"group_id": "2", "member_type": "column", "base_family": "w14", "published_removed_count": 12},
+        {"group_id": "3", "member_type": "column", "base_family": "w14", "published_removed_count": 10},
+        {"group_id": "4", "member_type": "column", "base_family": "w14", "published_removed_count": 2},
+        {"group_id": "5", "member_type": "column", "base_family": "w14", "published_removed_count": 8},
+        {"group_id": "6", "member_type": "column", "base_family": "w14", "published_removed_count": 1},
+        {"group_id": "7", "member_type": "column", "base_family": "w14", "published_removed_count": 2},
+        {"group_id": "8", "member_type": "column", "base_family": "w14", "published_removed_count": 1},
+        {"group_id": "9", "member_type": "beam", "base_family": "all_w", "published_removed_count": 42},
+        {"group_id": "10", "member_type": "beam", "base_family": "all_w", "published_removed_count": 42},
+        {"group_id": "11", "member_type": "beam", "base_family": "all_w", "published_removed_count": 42},
+        {"group_id": "12", "member_type": "beam", "base_family": "all_w", "published_removed_count": 42},
+        {"group_id": "13", "member_type": "beam", "base_family": "all_w", "published_removed_count": 38}
+      ]
+    }
+  ]
+}

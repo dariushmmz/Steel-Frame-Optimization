@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "backend_id": "modal-cpu-v1",
+  "app_name": "steel-frame-phase9",
+  "volume_name": "steel-frame-phase9-v2",
+  "volume_version": 2,
+  "python_version": "3.12.6",
+  "container_cpu_cores": 4.0,
+  "container_memory_mib": 1024,
+  "container_memory_limit_mib": 2048,
+  "worker_processes_per_seed": 4,
+  "maximum_parallel_seeds": 4,
+  "seed_timeout_seconds": 3600,
+  "automatic_retries": 0,
+  "checkpoint_commit_interval_epochs": 1,
+  "linux_comparison_relative_tolerance": 1e-8,
+  "maximum_projected_compute_cost_usd": 10.0,
+  "cpu_cost_usd_per_core_second": 0.0000131,
+  "memory_cost_usd_per_gib_second": 0.00000222,
+  "gpu_policy": "not_applicable_without_supported_opensees_cuda_backend",
+  "assumption_ids": ["ASM-002", "ASM-016", "ASM-038", "ASM-039", "ASM-040"]
+}

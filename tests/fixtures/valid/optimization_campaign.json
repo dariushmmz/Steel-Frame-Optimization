@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "delegated_campaign",
+  "case_ids": ["valid_primary"],
+  "seed_manifest_path": "configs/optimization/seed_manifest.json",
+  "status": "agent_decided_pending_ratification_DEC-011_DEC-012",
+  "population_size": 50,
+  "generations": 200,
+  "structural_evaluation_budget": 10000
+}
+

@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "steel-frame-optimization"
+version = "0.1.0"
+description = "Two-stage (LRFD + performance-based) seismic design optimization of steel moment frames with a discrete GA, reproducing Karimi & Hoseini Vaez (2019) problem settings."
+readme = "README.md"
+requires-python = "==3.12.6"
+dependencies = [
+    "numpy",
+    "pydantic>=2,<3",
+    "matplotlib",
+    "openseespy",
+    "xlrd==2.0.2",
+]
+
+[project.scripts]
+steel-frame-opt = "steel_frame_optimization.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "mypy",
+    "types-xlrd==2.0.0.20260518",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/steel_frame_optimization"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --strict-config"
+markers = [
+    "unit: software unit tests (validation layer 1)",
+    "analytical: closed-form / independent numerical checks (layer 2)",
+    "integration: multi-component tests",
+    "regression: frozen-baseline comparisons",
+    "acceptance: owner/engineer acceptance tests",
+]
+
+[tool.ruff]
+line-length = 100
+# docs/ holds archived evidence scripts (e.g., M1 audit) that must stay byte-identical to what ran
+extend-exclude = ["docs", ".docs"]
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "N", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "tests"]
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["openseespy.*", "matplotlib.*"]
+ignore_missing_imports = true

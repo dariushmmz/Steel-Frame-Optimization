@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "frame_id": "invalid_unknown_node",
+  "design_groups": ["g1"],
+  "nodes": [
+    {"node_id": "n1", "x_m": 0.0, "y_m": 0.0},
+    {"node_id": "n2", "x_m": 1.0, "y_m": 0.0}
+  ],
+  "members": [
+    {"member_id": "m1", "i_node": "n1", "j_node": "missing", "group_id": "g1", "member_type": "beam"}
+  ],
+  "supports": []
+}
+

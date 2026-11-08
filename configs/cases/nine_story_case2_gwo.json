@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "case_id": "nine-story-case2-gwo-published",
+  "frame_id": "9-story",
+  "domain_label": "273-section domain, pending client confirmation",
+  "source": "REF-A Table 8, Case 2 GWO",
+  "sections_by_group": {
+    "1": "W14X211",
+    "2": "W14X159",
+    "3": "W14X159",
+    "4": "W14X90",
+    "5": "W14X145",
+    "6": "W14X82",
+    "7": "W14X109",
+    "8": "W14X68",
+    "9": "W30X99",
+    "10": "W24X84",
+    "11": "W16X67",
+    "12": "W18X55",
+    "13": "W12X50"
+  },
+  "spectrum": {
+    "short_period_g": 0.5,
+    "one_second_g": 0.23,
+    "fa": 1.4,
+    "fv": 1.94,
+    "r_factor": 8.0,
+    "distribution_exponent": 2.0
+  },
+  "load_combination": {"dead": 1.2, "live": 1.0, "seismic": 1.0},
+  "analysis_policy": {
+    "element_formulation": "elastic_euler_bernoulli",
+    "second_order_transformation": "PDelta",
+    "beam_midpoint_nodes": true,
+    "column_elements_per_story": 1,
+    "numerical_relative_tolerance": 1e-6,
+    "equilibrium_relative_tolerance": 1e-8,
+    "repeat_relative_tolerance": 1e-12,
+    "exact_beam_column_relative_tolerance": 1e-4,
+    "pdelta_refinement_sequence": [1, 2, 4, 8, 16, 32],
+    "minimum_superposition_error": 0.05,
+    "status": "agent-decided, pending owner/engineer review"
+  }
+}

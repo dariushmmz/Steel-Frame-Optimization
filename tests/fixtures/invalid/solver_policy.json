@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "invalid_approved_empty",
+  "implementation_phase": "Phase 6",
+  "status": "approved",
+  "attempts": []
+}
+
