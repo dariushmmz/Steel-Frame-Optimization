@@ -39,7 +39,7 @@
   "kaggle_slots": 3,
   "colab_session": "phase12-filtered",
   "colab_slots": 1,
-  "github_enabled": false,
+  "github_enabled": true,
   "github_repository": "dariushmmz/Steel-Frame-Optimization",
   "github_branch": "main",
   "github_workflow": "phase12-github.yml",

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-11-08T11:25:00+03:30",
+  "status": "verified_and_activated_for_one_supplementary_slot",
+  "authorization": {
+    "owner_authorized_public_source_release": true,
+    "maximum_cost_usd": 0,
+    "paid_runners_allowed": false,
+    "role": "limited supplementary Phase 12 execution and cross-platform verification"
+  },
+  "repository": {
+    "url": "https://github.com/dariushmmz/Steel-Frame-Optimization",
+    "visibility": "public",
+    "source_snapshot_commit": "d6d2a5285b97c50257adc2cc3fc3ecb632e3d5cb",
+    "default_branch": "main",
+    "actions_enabled": true,
+    "source_bytes": 11174691,
+    "credentials_or_tokens_published": 0,
+    "checkpoints_published": 0,
+    "supplied_reference_pdfs_published": 0,
+    "processed_aisc_json_published": false
+  },
+  "runtime_input": {
+    "sections_path": "data/processed/aisc_v14_1_w_shapes.json",
+    "sections_sha256": "13f75d47cca20b3028c377ba46466fca5a0833c1ec578fb40c9b099d30fdb8cf",
+    "delivery": "two encrypted GitHub Actions repository secrets",
+    "publicly_accessible": false,
+    "runner_hash_verification_required": true
+  },
+  "free_resource_policy": {
+    "runner": "ubuntu-24.04 standard public-repository runner",
+    "documented_cpu": 4,
+    "documented_ram_gb": 16,
+    "documented_ssd_gb": 14,
+    "documented_job_limit_hours": 6,
+    "configured_job_timeout_minutes": 330,
+    "configured_slots": 1,
+    "configured_chunk_epochs": 40,
+    "requests_per_full_chunk": 4000,
+    "artifact_retention_days": 1,
+    "free_plan_artifact_storage_mb": 500,
+    "billing_api_status": 404,
+    "cost_control": "standard public-repository runners only; no larger, paid, or self-hosted paid runner",
+    "policy_disposition": "one bounded lane is proportional to testing and cross-platform operation of the repository software; GitHub is not the primary campaign backend"
+  },
+  "compatibility_canary": {
+    "workflow": "phase12-github.yml",
+    "run_id": 42460292668,
+    "url": "https://github.com/dariushmmz/Steel-Frame-Optimization/actions/runs/42460292668",
+    "campaign": "case2",
+    "seed": 0,
+    "completed_epochs": 1,
+    "evaluation_requests": 100,
+    "structural_executions": 100,
+    "cache_hits": 0,
+    "remote_execution_seconds": 120,
+    "checkpoint_sha256": "71ef3c638e959c4535befa99838bd18e454be1fd509309d9cc6810f8d303bc8a",
+    "modal_checkpoint_sha256_equal": true,
+    "local_result_count": 100,
+    "numerical_difference_count_at_declared_tolerance": 0,
+    "history_equal": true,
+    "maximum_absolute_difference": 1.5123902130653732e-11,
+    "maximum_relative_difference": 9.335085357704545e-12,
+    "relative_tolerance": 1e-8,
+    "absolute_tolerance": 1e-10,
+    "cross_platform_serialization_hash_difference_count": 15,
+    "identity_gate_passed": true,
+    "multiprocessing_gate_passed": true,
+    "artifact_download_and_hash_gate_passed": true
+  },
+  "scheduler_safety": {
+    "central_authoritative_inventory": true,
+    "lease_persisted_before_dispatch": true,
+    "only_fresh_unclaimed_seeds_eligible": true,
+    "maximum_parallel_github_seeds": 1,
+    "per_seed_concurrency_group": true,
+    "cancel_in_progress": false,
+    "each_chunk_validated_before_continuation": true,
+    "terminal_result_requires_exact_20000_requests": true,
+    "independent_champion_reevaluation_required": true,
+    "transient_api_failure_releases_lease": false
+  },
+  "local_verification": {
+    "python_version": "3.12.6",
+    "uv_version": "0.6.14",
+    "ruff_format_passed": true,
+    "ruff_lint_passed": true,
+    "strict_mypy_passed": true,
+    "pytest_passed": 241,
+    "pytest_failed": 0,
+    "pytest_skipped": 0,
+    "pytest_xfailed": 0
+  },
+  "network": {
+    "github_cli_version": "2.103.3",
+    "github_cli_download_bytes": 15197187,
+    "github_cli_sha256": "98d0cfa794721665d7973dd728c78aff7bd836d58f10f6d7a03568eccb0a22e0"
+  }
+}
